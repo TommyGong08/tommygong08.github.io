@@ -1,20 +1,32 @@
-- caption: Friday Theme on GitHub
-  href: https://github.com/sfreytag/friday-theme
+- caption: GitHub
+  href: https://github.com/TommyGong08
   icon: entypo/github.svg
 
-- caption: Stack Overflow
-  href: https://stackoverflow.com
-  icon: icons/stackoverflow.svg
+#- caption: Stack Overflow
+#  href: https://stackoverflow.com
+#  icon: icons/stackoverflow.svg
+#
+#- caption: Facebook
+#  href: https://www.facebook.com
+#  icon: entypo/facebook.svg
 
-- caption: Facebook
-  href: https://www.facebook.com
-  icon: entypo/facebook.svg
+#- caption: Twitter
+#  href: https://www.twitter.com
+#  icon: entypo/twitter.svg
 
-- caption: Twitter
-  href: https://www.twitter.com
-  icon: entypo/twitter.svg
+- caption: LinkedIn
+  href: https://www.linkedin.com/in/hiram-gong-031526277/
+  icon: entypo/linkedin.svg
 
-- caption: London
-  href: https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583
+- caption: Google Scholar
+  href: https://scholar.google.com/citations?user=ZfTbKOwAAAAJ&hl=zh-CN&oi=ao
+  icon: entypo/google+-with-circle.svg
+
+- caption: Email
+  href: mailto:hailong.gong@anu.edu.au
+  icon: entypo/mail.svg
+
+- caption: Canberra
+  href: https://en.wikipedia.org/wiki/Canberra
   icon: entypo/location-pin.svg
 
