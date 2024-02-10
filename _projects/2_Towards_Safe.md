@@ -1,5 +1,5 @@
 ---
-title: Decision Making For CAVs
+title: Decision Making for Connected-and-Automated Vehicles
 ---
 
 ## Introduction
