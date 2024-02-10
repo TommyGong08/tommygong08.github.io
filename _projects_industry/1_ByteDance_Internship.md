@@ -2,7 +2,8 @@
 title: App automated testing tools Algorithm Development, ByteDance (2021.10-2022.2)
 ---
 
-From Oct 2021 to Feb 2022, I joined in Quality Lab, ByteDance, supervised by Zhao Zhang. 
+From Oct 2021 to Feb 2022, I joined in Quality Lab, ByteDance, supervised by Zhao Zhang. During that time, my job was to 
+develop and optimize algorithms for automated testing tools.
 
 
 ### Representative Work
