@@ -68,6 +68,12 @@ defaults:
     values:
       show_profile: false
       layout: defaults/project
+
+  - scope:
+      path: "_projects_industry"
+    values:
+      show_profile: false
+      layout: defaults/project
   -
     scope:
       path: "list"
