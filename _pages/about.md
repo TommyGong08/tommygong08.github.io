@@ -12,97 +12,33 @@ images:
 ## Bio
 
 {% include components/intro.md %}
+<br />
+## Conference and Journal Papers
 
-## Courses Note
+- Leveraging Multi-Stream Information Fusion for Trajectory Prediction in Low-Illumination Scenarios: A Multi-Channel Graph Convolutional Approach<br>
+  **Hailong Gong**\*, Zirui Li\*, Chao Lu, Guodong Du, Jianwei Gong<br>
+  IEEE Transactions on Intelligent Transportation Systems<br>
+  [[PDF]](https://ieeexplore.ieee.org/abstract/document/10310658)
+<br />
 
-- Installation
-  - Designed for Jekyll 3.8
-  - Compatible with GitHub Pages
-- Configuration
-  - Useful data files to quickly generate the profile sidebar and site navigation
-  - Easy to configure, minimal options, sensible defaults
-- Styling
-  - Styled with Bootstrap, proven to work cross-platform
-  - Minimal additional SCSS to get in the way
-  - Entirely customisable by tweaking the Boostrap SCSS variables
+- Towards Online Risk Assessment for Human-robot Interaction: A Data-driven Hamilton-Jacobi-Isaacs Reachability Approach<br>
+  **Hailong Gong**\*, Zirui Li\*, Chao Lu, Jianwei Gong<br>
+26th IEEE International Conference on Intelligent Transportation Systems (ITSC2024)
+<br />
 
-## Programming
+- Towards Safe, efficient and Co-operative Decision-making for CAVs in Mixed Autonomy: An Attention Enhanced Graphic Reinforcement Learning Approach<br>
+  Zirui Li\*, **HaiLong Gong**\*, Runhao Zhou, Qi Liu, Chao Lu, Jianwei Gong<br>
+The 4th Symposium on Management of Future Motorway and Urban Traffic Systems 2022
+<br />
 
-Here's some quick examples of what it can do.
+- Fast and Accurate: The Perception System of a Formula Student Driverless Car<br>
+  **HaiLong Gong**, YunJi Feng, TaiRan Chen, ZuoOu Li, YunWei Li<br>
+  2022 6th International Conference on Robotics, Control and Automation (ICRCA)<br>
+  [[PDF]((https://ieeexplore.ieee.org/abstract/document/9828892))]
+<br />
 
-### Code Highlighting
-
-{% highlight javascript %}
-var modulePattern = (function() {
-    // your module code goes here
-    var sum = 0 ;
-
-    return {
-        add:function() {
-            sum = sum + 1;
-            return sum;
-        },
-        reset:function() {
-            return sum = 0;
-        }
-    }
-}());
-{% endhighlight %}
-
-### Bootstrap Components
-
-Here's a CSS component, it's an alert box with the info color:
-
-<div class="alert alert-info">
-    A simple info alert!
-</div>
-
-And this is a more sophisticated example, using the JS to include a carousel of images:
-
-<div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
-    <div class="carousel-inner">
-        {% for img in page.images %}
-            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img src="{{ img }}" class="d-block w-100" alt="">
-            </div>
-        {% endfor %}
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-The spinner.
-
-<div class="spinner-border text-dark mb-4" role="status">
-  <span class="sr-only">Loading...</span>
-</div>
-
-### Icons
-
-There's a suite of hundreds of Entypo icons included, here's just a few.
-
-<div class="d-flex align-items-center mb-4">
-    <span class="icon grey mr-2">
-        {% include entypo/clock.svg %}
-    </span>
-    <span class="icon grey mr-2">
-        {% include entypo/cycle.svg %}
-    </span>
-    <span class="icon grey mr-2">
-        {% include entypo/chevron-up.svg %}
-    </span>
-    <span class="icon grey mr-2">
-        {% include entypo/new-message.svg %}
-    </span>
-    <span class="icon grey mr-2">
-        {% include entypo/shopping-cart.svg %}
-    </span>
-</div>
-
-
+- Real-Time Motion Planning and Control for a Formula Student Driverless Car<br>
+  Tairan Chen, Xinyu Gao, Chenrui Huang, Xiang Li, Shaokun Yang, **Hailong Gong**, Yunji Feng<br>
+  Proceedings of China SAE Congress 2020: Selected Papers<br>
+  [[PDF](https://link.springer.com/chapter/10.1007/978-981-16-2090-4_12)]
+<br />
