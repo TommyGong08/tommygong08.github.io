@@ -1,5 +1,5 @@
 ---
-title: Online Risk Assessment for Human-robot Interaction(2023.3-2023.9)
+title: 2023.3-2023.9 Online Risk Assessment for Human-robot Interaction
 ---
 
 ### Introduction

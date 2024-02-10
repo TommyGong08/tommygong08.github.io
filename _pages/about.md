@@ -42,3 +42,5 @@ The 4th Symposium on Management of Future Motorway and Urban Traffic Systems 202
   Proceedings of China SAE Congress 2020: Selected Papers<br>
   [[PDF](https://link.springer.com/chapter/10.1007/978-981-16-2090-4_12)]
 <br />
+
+<font color="#dd0000">If you are interested in the unpublished paper above, please feel free to email me for the manuscripts.</font>

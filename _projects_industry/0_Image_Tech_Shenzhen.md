@@ -1,5 +1,5 @@
 ---
-title: Automatic Optical Inspection Algorithm Design (2023.3-2023.12)
+title: 2023.3-2023.12 Automatic Optical Inspection Algorithm Design 
 ---
 
 From March 2023 to Dec 2023, I worked as an AOI Algorithm Engineer in one of the top AOI companies in China. <br>
