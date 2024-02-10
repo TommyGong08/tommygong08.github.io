@@ -2,7 +2,7 @@
 layout: defaults/page
 permalink: index.html
 narrow: true
-title: Welcome to Hiram's Personal Website
+title: Welcome to Hiram's Personal Page
 ---
 
 ## About Me
