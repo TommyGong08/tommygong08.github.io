@@ -2,7 +2,7 @@
 title: Decision Making for Connected-and-Automated Vehicles
 ---
 
-## Introduction
+### Introduction
 
 In the field of Intelligent Transportation Systems
 (ITS), Connected and Automated Vehicles (CAVs) are viewed
@@ -30,8 +30,27 @@ in SUMO. The results of the experiment show that the proposed
 approach significantly improves CAV performance in terms of
 safety, efficiency, and cooperation<br>
 
-![framework](../_includes/img/2_Towards_Efficient.png)
-The schematic diagram of proposed framework.
+<div class="card mb-3">
+    <img class="card-img-top" src="https://raw.githubusercontent.com/TommyGong08/tommygong08.github.io/main/_includes/img/2_Towards_Efficient.png"/>
+    <div class="card-body bg-light">
+        <div class="card-text">
+            The schematic diagram of proposed framework.
+        </div>
+    </div>
+</div>
+
+
+### Tech Stack
+- Theory
+  - Machine Learning (GNN, Attention Mechanism)
+  - Reinforcement Learning
+  - Decision Making for Robotics
+  - Intelligent Transportation System
+- Programming
+  - Python
+  - Pytorch
+  - SUMO
+
 
 
 

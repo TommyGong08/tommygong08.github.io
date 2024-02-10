@@ -34,6 +34,10 @@ collections:
     output: true
     title: portfolio
     permalink: /:collection/:name.html
+  projects_industry:
+    output: true
+    title: Projects_industry
+    permalink: /:collection/:name.html
 
 defaults:
 # Turn the profile sidebar on for all pages by default, except for the

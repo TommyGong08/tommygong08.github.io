@@ -13,7 +13,7 @@ show_profile: true
 
 #### Industrial Projects
 
-{% for project in site.projects %}
+{% for project in site.projects_industry %}
 - [{{ project.title }}]({{ site.baseurl }}{{ project.url }})
 {% endfor %}
 
