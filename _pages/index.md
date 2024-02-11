@@ -42,4 +42,9 @@ title: Welcome to Hiram's Personal Page
 I am happy to share and discuss the previous projects, technology details and research interests with everybody, please feel free to drop me an [email](mailto:hailong.gong@anu.edu.au).
 <hr />
 
-Views:&nbsp;<span id="" class="leancloud_visitors" data-flag-title=""> - </span>.
+<div>
+  <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+    Visited:
+    <a href="#"><span class="leancloud-visitors-count"></span>.</a>
+  </span>
+</div>

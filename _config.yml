@@ -81,4 +81,9 @@ defaults:
       show_profile: false
       layout: defaults/list
 
+leancloud:
+  enable: true
+  app_id: MWwmGe7vgL0O6EFFKeDImBkD-gzGzoHsz
+  app_key: VQeBsSS0pFds2P7BcE95mCsd
+
 
