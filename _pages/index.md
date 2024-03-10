@@ -12,9 +12,6 @@ title: Welcome to Hiram's Personal Page
 [//]: # ([Here's the full feature list and some quick examples of what it can do.]&#40;{{ site.baseurl}}{% link _pages/about.md %}&#41;)
 
 <br />
-## [My Resume🔗](./_pages/doc/resume-hailong.pdf)
-
-<br />
 
 ## Education Background
 

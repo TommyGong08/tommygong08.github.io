@@ -7,3 +7,6 @@ Hiram(Hailong) Gong is now a postgraduate student at Australian National Univers
 Before that, he received the Bachelor's degree in Computer Science and Technology from Beijing Institute of Technology in 2022.
 
 <font color="#dd0000">Currently, Hiram is immersed in courses study for S1 2024 . Meanwhile, he hopes to **participate in more research projects and actively look for PhD opportunities in Australia**.</font>
+
+<br />
+## [My Resume🔗](./_pages/doc/resume-hailong.pdf)
