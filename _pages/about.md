@@ -23,7 +23,8 @@ images:
 
 - Towards Online Risk Assessment for Human-robot Interaction: A Data-driven Hamilton-Jacobi-Isaacs Reachability Approach<br>
   **Hailong Gong**\*, Zirui Li\*, Chao Lu, Jianwei Gong<br>
-26th IEEE International Conference on Intelligent Transportation Systems (ITSC2024)
+26th IEEE International Conference on Intelligent Transportation Systems (ITSC2024)<br>
+[[PDF]](https://ieeexplore.ieee.org/abstract/document/10421853)
 <br />
 
 - Towards Safe, efficient and Co-operative Decision-making for CAVs in Mixed Autonomy: An Attention Enhanced Graphic Reinforcement Learning Approach<br>
