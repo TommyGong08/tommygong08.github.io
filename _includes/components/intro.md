@@ -9,4 +9,4 @@ Before that, he received the Bachelor's degree in Computer Science and Technolog
 <font color="#dd0000">Currently, Hailong is immersed in courses study for S1 2024 . Meanwhile, he hopes to **participate in more cutting-edge projects and actively look for internships in Australia**.</font>
 
 <br />
-## [My Resume🔗](./_pages/doc/resume-hailong.pdf)
+## [My Resume🔗](./_pages/doc/ANU-Steven_Gong-CV-public.pdf)
