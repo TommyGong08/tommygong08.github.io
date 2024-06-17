@@ -4,8 +4,8 @@
 - title: Research
   href: about.html
 
-#- title: Posts
-#  href: list/posts.html
+- title: Posts
+  href: list/posts.html
 
 - title: Projects
   href: list/projects.html
