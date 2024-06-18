@@ -12,10 +12,8 @@ tags:
 
 Interested in computer vision, I took COMP6528 Computer Vision during my first semester at ANU also due to my previous
 work in this field. I'm grateful to our lecturers, Dr. Miaomiao Liu and Dr. Dylan Campbell, and the tutors for their
-dedicated efforts and guidance. I have strengthened my ability in computer vision from this course and
-I highly recommend this course to every student studying computing here.I highly recommend this course to every
-student studying computing here.
-
+dedicated efforts and guidance. I have strengthened my ability in computer vision through this course and
+I highly recommend COMP6528 to every student studying computing here.
 
 <!--more-->
 
