@@ -32,6 +32,7 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ### News
+- **\[June.2024\]** I finished the first semester at Australian National University, with two HD, one D and one CR, GPA 6.25/7.0!
 - **\[Feb.2024\]** I begin the Master of Computing at Australian National University, specializing in Artificial Intelligent!
 - **\[Nov.2023\]** The paper about Multi-stream Information Fusion in Low-illumination Scenarios is accepted by IEEE T-ITS!
 - **\[July.2023\]** Our research work on Online Risk Assessment for Human-robot Interaction is accepted by ITSC 2024!
