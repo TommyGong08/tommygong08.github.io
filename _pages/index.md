@@ -44,7 +44,7 @@ I am happy to share and discuss the previous projects, technology details and re
 <hr />
 
 <div id="page-views-container">
-  Page Views:：<span id="page-views"></span>
+  Page Views:<span id="page-views"></span>
 </div>
 
 <script>

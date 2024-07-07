@@ -31,9 +31,9 @@
             return gapi.client.analyticsdata.properties.runReport({
               property: 'properties/449203991',
               resource: {
-                dimensions: [{name: 'date'}],
-                metrics: [{name: 'screenPageViews'}],
-                dateRanges: [{startDate: '30daysAgo', endDate: 'today'}]
+                dimensions: [{name: 'year'}],
+                metrics: [{name: 'activeUsers'}],
+                dateRanges: [{startDate: '2020-07-07', endDate: 'today'}]
               }
             });
           }).then(function(response) {
