@@ -43,11 +43,8 @@ title: Welcome to Hailong's Personal Page
 I am happy to share and discuss the previous projects, technology details and research interests with everybody, please feel free to drop me an [email](mailto:hailong.gong@anu.edu.au).
 <hr />
 
-<div id="page-views-container">
-  Page Views:<span id="page-views"></span>
-</div>
-
-<script>
-  initializeAnalytics();
-</script>
+<body onload="initializeAnalytics()">
+    <h1>Page Views</h1>
+    <div id="page-views">Loading...</div>
+</body>
 

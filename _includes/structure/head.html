@@ -18,38 +18,89 @@
     </script>
 
 
+<!--    <script src="https://apis.google.com/js/api.js"></script>-->
+<!--    <script>-->
+<!--      function initializeAnalytics() {-->
+<!--        gapi.load('client:auth2', function() {-->
+<!--          gapi.client.init({-->
+<!--            apiKey: 'AIzaSyBtz4-iBiqGKhyl-oOT4EEgT1nRU6TTIFg',-->
+<!--            clientId: '666279208057-1r3tact5mdueptnapoinmddtgd94hc82.apps.googleusercontent.com',-->
+<!--            scope: 'https://www.googleapis.com/auth/analytics.readonly',-->
+<!--            discoveryDocs: ['https://analyticsdata.googleapis.com/$discovery/rest?version=v1']-->
+<!--          }).then(function() {-->
+<!--            return gapi.client.analyticsdata.properties.runReport({-->
+<!--              property: 'properties/449203991',-->
+<!--              resource: {-->
+<!--                dimensions: [{name: 'date'}],-->
+<!--                metrics: [{name: 'screenPageViews'}],-->
+<!--                dateRanges: [{startDate: '2020-07-07', endDate: 'today'}]-->
+<!--              }-->
+<!--            });-->
+<!--          }).then(function(response) {-->
+<!--            console.log('API response received', response);-->
+<!--            if (response.result.rows.length > 0) {-->
+<!--                var pageViews = response.result.rows[0].metrics[0].values[0];-->
+<!--                document.getElementById('page-views').innerText = pageViews;-->
+<!--            } else {-->
+<!--                console.log('No data found');-->
+<!--            }-->
+<!--          }, function(error) {-->
+<!--            console.log(error);-->
+<!--          });-->
+<!--        });-->
+<!--      }-->
+<!--      window.onload = initializeAnalytics;-->
+<!--    </script>-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Analytics Data</title>
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
-      function initializeAnalytics() {
-        gapi.load('client:auth2', function() {
-          gapi.client.init({
-            apiKey: 'AIzaSyBtz4-iBiqGKhyl-oOT4EEgT1nRU6TTIFg',
-            clientId: '666279208057-1r3tact5mdueptnapoinmddtgd94hc82.apps.googleusercontent.com',
-            scope: 'https://www.googleapis.com/auth/analytics.readonly',
-            discoveryDocs: ['https://analyticsdata.googleapis.com/$discovery/rest?version=v1']
-          }).then(function() {
-            return gapi.client.analyticsdata.properties.runReport({
-              property: 'properties/449203991',
-              resource: {
-                dimensions: [{name: 'year'}],
-                metrics: [{name: 'activeUsers'}],
-                dateRanges: [{startDate: '2020-07-07', endDate: 'today'}]
-              }
+        function initializeAnalytics() {
+            console.log('Initializing Analytics');
+            gapi.load('client:auth2', function() {
+                console.log('gapi loaded');
+                gapi.auth2.init({
+                    client_id: '666279208057-1r3tact5mdueptnapoinmddtgd94hc82.apps.googleusercontent.com',
+                }).then(function () {
+                    console.log('gapi client initialized');
+                    gapi.auth2.getAuthInstance().signIn().then(function() {
+                        loadAnalytics();
+                    });
+                });
             });
-          }).then(function(response) {
-            var pageViews = response.result.rows[0].metrics[0].values[0];
-            document.getElementById('page-views').innerText = pageViews;
-          }, function(error) {
-            console.log(error);
-          });
-        });
-      }
+        }
+
+        function loadAnalytics() {
+            gapi.client.init({
+                apiKey: 'AIzaSyBtz4-iBiqGKhyl-oOT4EEgT1nRU6TTIFg',
+                discoveryDocs: ['https://analyticsdata.googleapis.com/$discovery/rest?version=v1'],
+            }).then(function() {
+                return gapi.client.analyticsdata.properties.runReport({
+                    property: 'properties/449203991',
+                    resource: {
+                        dimensions: [{name: 'date'}],
+                        metrics: [{name: 'screenPageViews'}],
+                        dateRanges: [{startDate: '2020-0-07', endDate: 'today'}]
+                    }
+                });
+            }).then(function(response) {
+                console.log('API response received', response);
+                if (response.result.rows.length > 0) {
+                    var pageViews = response.result.rows[0].metrics[0].values[0];
+                    document.getElementById('page-views').innerText = pageViews;
+                } else {
+                    console.log('No data found');
+                }
+            }, function(error) {
+                console.log('Error:', error);
+            });
+        }
     </script>
 
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     <meta name="description" content="">
     <meta name="author" content="">
 
