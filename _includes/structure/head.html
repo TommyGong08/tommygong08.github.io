@@ -56,7 +56,7 @@
         // 定义一个函数来加载页面浏览量
         function loadPageViews(articleId) {
             // 替换这里的articleId为实际的文章ID，或者从URL中获取
-            const url = `http://localhost:3000/pageviews/:articleId`;
+            const url = `https://personalpage-express-mongodb.azurewebsites.net/pageviews/:articleId`;
 
             fetch(url)
                 .then(response => {
