@@ -52,51 +52,37 @@
 <!--      window.onload = initializeAnalytics;-->
 <!--    </script>-->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Analytics Data</title>
-    <script src="https://apis.google.com/js/api.js"></script>
     <script>
-        function initializeAnalytics() {
-            console.log('Initializing Analytics');
-            gapi.load('client:auth2', function() {
-                console.log('gapi loaded');
-                gapi.auth2.init({
-                    client_id: '666279208057-1r3tact5mdueptnapoinmddtgd94hc82.apps.googleusercontent.com',
-                }).then(function () {
-                    console.log('gapi client initialized');
-                    gapi.auth2.getAuthInstance().signIn().then(function() {
-                        loadAnalytics();
-                    });
+        // 定义一个函数来加载页面浏览量
+        function loadPageViews(articleId) {
+            // 替换这里的articleId为实际的文章ID，或者从URL中获取
+            const url = `http://localhost:3000/pageviews/:articleId`;
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json(); // 解析JSON响应
+                })
+                .then(data => {
+                    // 更新页面上的元素以显示页面浏览量
+                    document.getElementById('page-views').textContent = `${data.count}`;
+                })
+                .catch(error => {
+                    console.error('There was a problem fetching the page views:', error);
+                    document.getElementById('page-views').textContent = 'Error loading page views';
                 });
-            });
         }
 
-        function loadAnalytics() {
-            gapi.client.init({
-                apiKey: 'AIzaSyBtz4-iBiqGKhyl-oOT4EEgT1nRU6TTIFg',
-                discoveryDocs: ['https://analyticsdata.googleapis.com/$discovery/rest?version=v1'],
-            }).then(function() {
-                return gapi.client.analyticsdata.properties.runReport({
-                    property: 'properties/449203991',
-                    resource: {
-                        dimensions: [{name: 'date'}],
-                        metrics: [{name: 'screenPageViews'}],
-                        dateRanges: [{startDate: '2020-0-07', endDate: 'today'}]
-                    }
-                });
-            }).then(function(response) {
-                console.log('API response received', response);
-                if (response.result.rows.length > 0) {
-                    var pageViews = response.result.rows[0].metrics[0].values[0];
-                    document.getElementById('page-views').innerText = pageViews;
-                } else {
-                    console.log('No data found');
-                }
-            }, function(error) {
-                console.log('Error:', error);
-            });
-        }
+        // 假设你已经知道文章ID，或者从URL中解析它
+        // 这里我们直接用一个示例ID
+        const articleId = 'https://tommygong08.github.io/';
+
+        // 页面加载完成后调用函数
+        window.onload = function() {
+            loadPageViews(articleId);
+        };
     </script>
 
 <!--    <meta charset="utf-8">-->
