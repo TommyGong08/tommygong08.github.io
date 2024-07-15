@@ -9,48 +9,74 @@
     </script>
 
     <script>
-    fetch('https://ipinfo.io/json?token=cfcaa1b98dabac')
-    .then(response => response.json())
-    .then(data => {
-    console.log('User IP: ', data.ip);
-    console.log('User Country: ', data.country);
-    });
+        fetch('https://ipinfo.io/json?token=cfcaa1b98dabac')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // 假设data.loc不存在，我们可能需要自己构建或使用其他API
+            let loc = `${data.loc || "0.0000,0.0000"}`; // 示例默认值
+            let locationData = {
+                "IP": data.ip,
+                "City": data.city,
+                "Country": data.country,
+                "Loc": loc
+            };
+
+            // 发送POST请求http://localhost:3000/location/insert
+            fetch('https://personalpage-express-mongodb.azurewebsites.net/location/insert', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(locationData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to insert location data');
+                }
+                console.log('Location data inserted successfully');
+            })
+            .catch(error => {
+                console.error('Error inserting location data:', error);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching location data:', error);
+        });
     </script>
 
+    <title>World Map with Marker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #mapid {
+            height: 400px; /* 你可以根据需要调整这个高度 */
+            width: 100%; /* 宽度设置为100%，这样地图就会占据整个容器的宽度 */
+            max-width: 800px; /* 你可以设置一个最大宽度，防止在大屏幕上地图变得过大 */
+            margin: 0 auto; /* 如果设置了最大宽度，这个样式可以帮助地图在页面中居中显示 */
+        }
 
-<!--    <script src="https://apis.google.com/js/api.js"></script>-->
-<!--    <script>-->
-<!--      function initializeAnalytics() {-->
-<!--        gapi.load('client:auth2', function() {-->
-<!--          gapi.client.init({-->
-<!--            apiKey: 'AIzaSyBtz4-iBiqGKhyl-oOT4EEgT1nRU6TTIFg',-->
-<!--            clientId: '666279208057-1r3tact5mdueptnapoinmddtgd94hc82.apps.googleusercontent.com',-->
-<!--            scope: 'https://www.googleapis.com/auth/analytics.readonly',-->
-<!--            discoveryDocs: ['https://analyticsdata.googleapis.com/$discovery/rest?version=v1']-->
-<!--          }).then(function() {-->
-<!--            return gapi.client.analyticsdata.properties.runReport({-->
-<!--              property: 'properties/449203991',-->
-<!--              resource: {-->
-<!--                dimensions: [{name: 'date'}],-->
-<!--                metrics: [{name: 'screenPageViews'}],-->
-<!--                dateRanges: [{startDate: '2020-07-07', endDate: 'today'}]-->
-<!--              }-->
-<!--            });-->
-<!--          }).then(function(response) {-->
-<!--            console.log('API response received', response);-->
-<!--            if (response.result.rows.length > 0) {-->
-<!--                var pageViews = response.result.rows[0].metrics[0].values[0];-->
-<!--                document.getElementById('page-views').innerText = pageViews;-->
-<!--            } else {-->
-<!--                console.log('No data found');-->
-<!--            }-->
-<!--          }, function(error) {-->
-<!--            console.log(error);-->
-<!--          });-->
-<!--        });-->
-<!--      }-->
-<!--      window.onload = initializeAnalytics;-->
-<!--    </script>-->
+        .red-triangle {
+            fill: red;
+            stroke: none;
+            pointer-events: none;
+        }
+
+        .blue-triangle {
+            fill: blue;
+            stroke: none;
+            pointer-events: none;
+        }
+
+        .green-triangle {
+            fill: green;
+            stroke: none;
+            pointer-events: none;
+        }
+    </style>
 
     <script>
         // 定义一个函数来加载页面浏览量
@@ -67,7 +93,7 @@
                 })
                 .then(data => {
                     // 更新页面上的元素以显示页面浏览量
-                    document.getElementById('page-views').textContent = `${data.count}`;
+                    document.getElementById('page-views').textContent = `${data.count} visits`;
                 })
                 .catch(error => {
                     console.error('There was a problem fetching the page views:', error);

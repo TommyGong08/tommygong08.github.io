@@ -17,7 +17,7 @@ title: Welcome to Hailong's Personal Page
 
 |         Year          |                        Institute                        | <img width=20/> Degree                              |
 |:---------------------:|:-------------------------------------------------------:|:----------------------------------------------------|
-|      2024.2-now       |     <img width=20/> Australian National University      | <img width=20/>Master of Computing                  |
+|      2024.2-now       |     <img width=20/> Australian National University      | <img width=20/>M.S. Computing                       |
 |     2018.9-2022.6     |    <img width=20/>  Beijing Institute of Technology     | <img width=20/>B.S. Computer Science and Technology |
 
 <br />
@@ -45,6 +45,83 @@ I am happy to share and discuss the previous projects, technology details and re
 
 
 <body>  
-    Page Views: <span id="page-views">Loading...</span>  
+<h5> Page Views</h5>
+<span id="page-views">Loading...</span>
+
+<br />
+<br />
+
+<h5> Visitors Map </h5>
+<div id="mapid"></div>  
+  
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>  
+<script>  
+    var mymap = L.map('mapid').setView([35, 130], 1); // 设置地图视图中心点和缩放级别  
+  
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {  
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',  
+        maxZoom: 18,  
+    }).addTo(mymap);  
+
+    var ipCount = 30; // 用于跟踪已处理的IP数量  
+  
+    function addLocationsToMap(locations) {  
+        locations.forEach((location, index) => {  
+            // 根据IP数量区间设置颜色类  
+            let colorClass;  
+            if (ipCount >= 20 && ipCount < 30) {  
+                colorClass = 'green-triangle';  
+            } else if (ipCount >= 10 && ipCount < 20) {  
+                colorClass = 'blue-triangle';  
+            } else {  
+                colorClass = 'red-triangle';  
+            }    
+            // 解析Loc字符串为经纬度数组  
+            var coords = location.Loc.split(',').map(Number);  
+  
+            // 创建一个SVG元素用于绘制红色三角形  
+            var svgMarker = document.createElementNS("http://www.w3.org/2000/svg", "svg");  
+            svgMarker.setAttribute("class", "marker");  
+            svgMarker.setAttribute("width", "20");  
+            svgMarker.setAttribute("height", "30");  
+  
+            var polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");  
+            polygon.setAttribute("class", colorClass);  
+            polygon.setAttribute("points", "4,0 0,15 8,15"); // 三角形顶点坐标  
+  
+            svgMarker.appendChild(polygon);  
+  
+            // 使用L.DivIcon将SVG作为图标  
+            var myIcon = L.divIcon({  
+                className: 'my-custom-icon',  
+                html: svgMarker.outerHTML,  
+                iconSize: [20, 30], // 与SVG尺寸相匹配  
+                iconAnchor: [10, 30], // 图标锚点  
+                popupAnchor: [0, -30] // 弹出框锚点  
+            });  
+  
+            // 将标记添加到地图上  
+            L.marker(coords, {icon: myIcon}).addTo(mymap);  
+
+            // 更新已处理的IP数量  
+            ipCount--;  
+  
+            // 如果已经处理了30个，重置计数器  
+            if (ipCount < 0) {  
+                ipCount = 30;  
+            } 
+        });  
+    }  
+  
+    // 使用fetch API从服务器获取数据  http://localhost:3000/location/get-latest
+    fetch('https://personalpage-express-mongodb.azurewebsites.net/location/get-latest')  
+        .then(response => response.json())  
+        .then(data => {  
+            // 假设返回的数据是一个数组  
+            var locations = data.slice(0, 30); // 取前30个元素，如果不足30个则按实际数量  
+            addLocationsToMap(locations);  
+        })  
+        .catch(error => console.error('Error fetching data:', error));   
+</script>  
 </body>
 
