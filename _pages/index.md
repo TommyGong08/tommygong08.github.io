@@ -69,7 +69,7 @@ I am happy to share and discuss the previous projects, technology details and re
         locations.forEach((location, index) => {  
             // 根据IP数量区间设置颜色类  
             let colorClass;  
-            if (ipCount >= 20 && ipCount < 30) {  
+            if (ipCount >= 0 && ipCount < 10) {  
                 colorClass = 'green-triangle';  
             } else if (ipCount >= 10 && ipCount < 20) {  
                 colorClass = 'blue-triangle';  
