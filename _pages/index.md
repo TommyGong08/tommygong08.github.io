@@ -63,7 +63,7 @@ I am happy to share and discuss the previous projects, technology details and re
         maxZoom: 18,  
     }).addTo(mymap);  
 
-    var ipCount = 30; // 用于跟踪已处理的IP数量  
+    var ipCount = 50; // 用于跟踪已处理的IP数量  
   
     function addLocationsToMap(locations) {  
         locations.forEach((location, index) => {  
@@ -71,7 +71,7 @@ I am happy to share and discuss the previous projects, technology details and re
             let colorClass;  
             if (ipCount >= 0 && ipCount < 10) {  
                 colorClass = 'green-triangle';  
-            } else if (ipCount >= 10 && ipCount < 20) {  
+            } else if (ipCount >= 10 && ipCount < 30) {  
                 colorClass = 'blue-triangle';  
             } else {  
                 colorClass = 'red-triangle';  
@@ -106,9 +106,9 @@ I am happy to share and discuss the previous projects, technology details and re
             // 更新已处理的IP数量  
             ipCount--;  
   
-            // 如果已经处理了30个，重置计数器  
+            // 如果已经处理了50个，重置计数器  
             if (ipCount < 0) {  
-                ipCount = 30;  
+                ipCount = 50;  
             } 
         });  
     }  
@@ -118,7 +118,7 @@ I am happy to share and discuss the previous projects, technology details and re
         .then(response => response.json())  
         .then(data => {  
             // 假设返回的数据是一个数组  
-            var locations = data.slice(0, 30); // 取前30个元素，如果不足30个则按实际数量  
+            var locations = data.slice(0, 50); // 取前30个元素，如果不足30个则按实际数量  
             addLocationsToMap(locations);  
         })  
         .catch(error => console.error('Error fetching data:', error));   
