@@ -94,7 +94,7 @@
                 })
                 .then(data => {
                     // 更新页面上的元素以显示页面浏览量
-                    document.getElementById('page-views').textContent = `$Total: {data.count} visits`;
+                    document.getElementById('page-views').textContent = `In total: ${data.count} visits`;
                 })
                 .catch(error => {
                     console.error('There was a problem fetching the page views:', error);
@@ -116,7 +116,7 @@
                 })
                 .then(data => {
                     // 更新页面上的元素以显示当日页面浏览量
-                    document.getElementById('page-views-today').textContent = `$Today: {data.count} visits`;
+                    document.getElementById('page-views-today').textContent = `Today   : ${data.count} visits`;
                 })
                 .catch(error => {
                     console.error('There was a problem fetching the daily page views:', error);
