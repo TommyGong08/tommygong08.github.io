@@ -120,7 +120,7 @@ I am happy to share and discuss the previous projects, technology details and re
         .then(response => response.json())  
         .then(data => {  
             // 假设返回的数据是一个数组  
-            var locations = data.slice(0, 50); // 取前30个元素，如果不足30个则按实际数量  
+            var locations = data.slice(0, 50);  
             addLocationsToMap(locations);  
         })  
         .catch(error => console.error('Error fetching data:', error));   
