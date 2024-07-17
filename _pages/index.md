@@ -46,6 +46,8 @@ I am happy to share and discuss the previous projects, technology details and re
 
 <body>  
 <h5> Page Views</h5>
+<span id="page-views-today">Loading...</span>
+<br />
 <span id="page-views">Loading...</span>
 
 <br />

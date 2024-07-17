@@ -81,8 +81,9 @@
     <script>
         // 定义一个函数来加载页面浏览量
         function loadPageViews(articleId) {
-            // 替换这里的articleId为实际的文章ID，或者从URL中获取
+            // 替换这里的articleId为实际的文章ID，或者从URL中获取 http://localhost:3000/pageviews/:articleId
             const url = `https://personalpage-express-mongodb.azurewebsites.net/pageviews/:articleId`;
+            // const url = `http://localhost:3000/pageviews/:articleId`;
 
             fetch(url)
                 .then(response => {
@@ -101,6 +102,28 @@
                 });
         }
 
+        // 定义一个函数来加载当日页面浏览量
+        function loadDailyPageViews(articleId) {
+            // 构建包含实际文章ID的URL
+            const url = `https://personalpage-express-mongodb.azurewebsites.net/pageViewsDaily`;
+            // const url = `http://localhost:3000/pageViewsDaily`;
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json(); // 解析JSON响应
+                })
+                .then(data => {
+                    // 更新页面上的元素以显示当日页面浏览量
+                    document.getElementById('page-views-today').textContent = `${data.count} visits today`;
+                })
+                .catch(error => {
+                    console.error('There was a problem fetching the daily page views:', error);
+                    document.getElementById('page-views-today').textContent = 'Error loading daily page views';
+                });
+        }
+
         // 假设你已经知道文章ID，或者从URL中解析它
         // 这里我们直接用一个示例ID
         const articleId = 'https://tommygong08.github.io/';
@@ -108,8 +131,10 @@
         // 页面加载完成后调用函数
         window.onload = function() {
             loadPageViews(articleId);
+            loadDailyPageViews(articleId);
         };
     </script>
+
 
 <!--    <meta charset="utf-8">-->
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
