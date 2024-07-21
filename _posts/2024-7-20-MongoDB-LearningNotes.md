@@ -11,7 +11,7 @@ document. Understanding MongoDB is crucial for back-end development, particularl
 
 <!--more-->
 
-#### Useful Commands
+### Useful Commands
 
 #### A. Search Commands
 
@@ -29,6 +29,7 @@ document. Understanding MongoDB is crucial for back-end development, particularl
 11. find the first data
 12. find data with age greater than 22
 13. find data with age greater than and equals to 22
+
 ```zsh
 mongosh
 
@@ -57,7 +58,6 @@ db.collectionName.findOne()
 db.collectionName.find({age:{$gt:22}})
 
 db.collectionName.find({age:{$gte:22}})
-
 ```
 
 
@@ -67,6 +67,7 @@ Notes: don't forget $set when updating data.
 2. add sex in one specified data(name=Jack, age=18)
 3. update multi data at one time
 4. increase age by 1
+
 ```zsh
 db.collectionName.update({"name": "Tom"}, {$set:{"name": "Jack"}})
 
