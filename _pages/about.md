@@ -35,7 +35,7 @@ The 4th Symposium on Management of Future Motorway and Urban Traffic Systems 202
 - Fast and Accurate: The Perception System of a Formula Student Driverless Car<br>
   **HaiLong Gong**, YunJi Feng, TaiRan Chen, ZuoOu Li, YunWei Li<br>
   2022 6th International Conference on Robotics, Control and Automation (ICRCA)<br>
-  [[PDF]((https://ieeexplore.ieee.org/abstract/document/9828892))]
+  [[PDF](https://ieeexplore.ieee.org/abstract/document/9828892)]
 <br />
 
 - Real-Time Motion Planning and Control for a Formula Student Driverless Car<br>
