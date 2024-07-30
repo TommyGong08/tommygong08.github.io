@@ -44,4 +44,6 @@ The 4th Symposium on Management of Future Motorway and Urban Traffic Systems 202
   [[PDF](https://link.springer.com/chapter/10.1007/978-981-16-2090-4_12)]
 <br />
 
+- \* the authors contribute equally.
+
 <font color="#dd0000">If you are interested in the unpublished paper above, please feel free to email me for the manuscripts.</font>
