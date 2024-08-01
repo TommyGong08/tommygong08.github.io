@@ -1,5 +1,5 @@
 ---
-title:  My Course Plan studying master of computing at ANU
+title:  My Course Plan Studying Master of Computing at ANU
 tags:
   - Course Plan
   - Master of Computing
