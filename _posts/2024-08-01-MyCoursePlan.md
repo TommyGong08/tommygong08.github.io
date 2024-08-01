@@ -6,8 +6,9 @@ tags:
   - Australian National University
 ---
 
-This is a temporal course plan record the courses than I plan to enroll for the master of computing at ANU. 
+This temporal course plan records the courses I plan to enroll in for the master of computing at ANU. 
 It will be updated if there are any changes.
+
 
 <!--more-->
 
