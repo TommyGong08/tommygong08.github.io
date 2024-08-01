@@ -1,5 +1,5 @@
 ---
-title: 2022.7-2023.11 Leveraging Multi-Stream Information Fusion for Trajectory Prediction
+title: 2022.7-2023.11 **(Research)** Leveraging Multi-Stream Information Fusion for Trajectory Prediction
 ---
 
 ### Introduction

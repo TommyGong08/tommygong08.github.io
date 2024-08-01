@@ -1,5 +1,5 @@
 ---
-title: 2021.12-2022.6 Improvement and Realization of Stochastic Contextual Bandit Problem
+title: 2021.12-2022.6 **(Research)** Improvement and Realization of Stochastic Contextual Bandit Problem
 ---
 
 * **Graduation Thesis Project**, supervised by [Dr. Zhengyang Liu](https://lozycs.github.io/)

@@ -26,17 +26,35 @@ sass:
 
 # Turn the projects into a collection.
 collections:
-  projects:
+
+  projects_2024:
     output: true
-    title: Projects
+    title: Projects2024
     permalink: /:collection/:name.html
+
+  projects_2023:
+    output: true
+    title: Projects2023
+    permalink: /:collection/:name.html
+
+  projects_2022:
+    output: true
+    title: Projects2022
+    permalink: /:collection/:name.html
+
+  projects_2021:
+    output: true
+    title: Projects2021
+    permalink: /:collection/:name.html
+
+  projects_2020:
+    output: true
+    title: Projects2020
+    permalink: /:collection/:name.html
+
   portfolio:
     output: true
     title: portfolio
-    permalink: /:collection/:name.html
-  projects_industry:
-    output: true
-    title: Projects_industry
     permalink: /:collection/:name.html
 
 defaults:
@@ -62,18 +80,38 @@ defaults:
     values:
       show_profile: false
       layout: defaults/portfolio
+
   -
     scope:
-      path: "_projects"
+      path: "_projects_2024/"
     values:
       show_profile: false
       layout: defaults/project
 
   - scope:
-      path: "_projects_industry"
+      path: "_projects_2023/"
     values:
       show_profile: false
       layout: defaults/project
+
+  - scope:
+      path: "_projects_2022/"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  - scope:
+      path: "_projects_2021/"
+    values:
+      show_profile: false
+      layout: defaults/project
+
+  - scope:
+      path: "_projects_2020/"
+    values:
+      show_profile: false
+      layout: defaults/project
+
   -
     scope:
       path: "list"

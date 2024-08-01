@@ -1,5 +1,5 @@
 ---
-title: 2022.7-2023.1 Decision Making for Connected-and-Automated Vehicles
+title: 2022.7-2023.1 **(Research)** Decision Making for Connected-and-Automated Vehicles
 ---
 
 ### Introduction
