@@ -6,7 +6,12 @@
 Hailong(Steven) Gong is now a postgraduate student at Australian National University, pursuing Master of Computing since February 2024.
 Before that, he received the Bachelor's degree in Computer Science and Technology from Beijing Institute of Technology in 2022.
 
-<font color="#dd0000">Currently, Hailong is immersed in courses study for S1 2024 . Meanwhile, he hopes to **participate in more cutting-edge projects and actively look for internships in Australia**.</font>
+<font color="#dd0000">Currently, Hailong is immersed in courses study for S2 2024.
+Meanwhile, he hopes to **participate in more cutting-edge projects and actively look for internships in Australia**.</font>
+
+
+Please click [here](https://tommygong08.github.io/2024/08/01/MyCoursePlan.html) to see his course plan .
+
 
 <br />
 ## [My Resume🔗](./_pages/doc/ANU-Steven_Gong-CV-public.pdf)
