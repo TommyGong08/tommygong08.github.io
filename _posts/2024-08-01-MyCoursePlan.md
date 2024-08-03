@@ -30,7 +30,7 @@ It will be updated if there are any changes.
 - TBD
 - TBD
 
-### 2025 S1
+#### 2025 S2
 - TBD
 - TBD
 - TBD
