@@ -83,31 +83,31 @@ defaults:
 
   -
     scope:
-      path: "_projects_2024/"
+      path: "_projects_2024"
     values:
       show_profile: false
       layout: defaults/project
 
   - scope:
-      path: "_projects_2023/"
+      path: "_projects_2023"
     values:
       show_profile: false
       layout: defaults/project
 
   - scope:
-      path: "_projects_2022/"
+      path: "_projects_2022"
     values:
       show_profile: false
       layout: defaults/project
 
   - scope:
-      path: "_projects_2021/"
+      path: "_projects_2021"
     values:
       show_profile: false
       layout: defaults/project
 
   - scope:
-      path: "_projects_2020/"
+      path: "_projects_2020"
     values:
       show_profile: false
       layout: defaults/project
