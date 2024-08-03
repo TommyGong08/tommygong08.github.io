@@ -13,16 +13,16 @@ It will be updated if there are any changes.
 <!--more-->
 
 #### 2024 S1
-- COMP6262 Logic
-- COMP6528 Computer Vision
-- COMP6710 Structured Programming
-- MATH6005 Discrete Mathematical Models
+- COMP6262 Logic ([link](https://programsandcourses.anu.edu.au/course/comp6262))
+- COMP6528 Computer Vision ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6528))
+- COMP6710 Structured Programming ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6710))
+- MATH6005 Discrete Mathematical Models ([link](https://programsandcourses.anu.edu.au/2024/course/MATH6005))
 
 #### 2024 S2
-- COMP6730 Programming for Scientists
-- COMP6464 High Performance Scientific Computation
-- COMP6466 Algorithms
-- COMP8011 Advanced Topics in Formal Methods and Programming Languages
+- COMP6730 Programming for Scientists ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6730))
+- COMP6464 High Performance Scientific Computation([link](https://programsandcourses.anu.edu.au/2024/course/COMP6464))
+- COMP6466 Algorithms([link](https://programsandcourses.anu.edu.au/2024/course/COMP6466))
+- COMP8011 Advanced Topics in Formal Methods and Programming Languages([link](https://programsandcourses.anu.edu.au/2024/course/COMP8011))
 
 #### 2025 S1
 - COMP8300 Parallel System
