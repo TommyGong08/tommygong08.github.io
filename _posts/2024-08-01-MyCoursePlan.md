@@ -20,13 +20,13 @@ It will be updated if there are any changes.
 
 #### 2024 S2
 - COMP6730 Programming for Scientists ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6730))
-- COMP6464 High Performance Scientific Computation([link](https://programsandcourses.anu.edu.au/2024/course/COMP6464))
-- COMP6466 Algorithms([link](https://programsandcourses.anu.edu.au/2024/course/COMP6466))
+- COMP6464 High Performance Scientific Computation ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6464))
+- COMP6466 Algorithms ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6466))
 - COMP8011 Advanced Topics in Formal Methods and Programming Languages([link](https://programsandcourses.anu.edu.au/2024/course/COMP8011))
 
 #### 2025 S1
-- COMP8300 Parallel System
-- COMP8460 Advanced Algorithms
+- COMP8300 Parallel Systems ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8300))
+- COMP8460 Advanced Algorithms ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8460))
 - TBD
 - TBD
 
