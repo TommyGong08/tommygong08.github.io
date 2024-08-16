@@ -17,7 +17,7 @@ title: Welcome to Hailong's Personal Page
 
 |         Year          |                        Institute                        | <img width=20/> Degree                              |
 |:---------------------:|:-------------------------------------------------------:|:----------------------------------------------------|
-|      2024.2-now       |     <img width=20/> Australian National University      | <img width=20/>M.S. Computing                       |
+|      2024.2-now       |     <img width=20/> Australian National University      | <img width=20/>M.S. Computing (Advanced)            |
 |     2018.9-2022.6     |    <img width=20/>  Beijing Institute of Technology     | <img width=20/>B.S. Computer Science and Technology |
 
 <br />
