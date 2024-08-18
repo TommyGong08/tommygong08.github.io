@@ -27,7 +27,7 @@
             };
 
             // 发送POST请求http://localhost:3000/location/insert
-            fetch('https://personalpage-express-mongodb.azurewebsites.net/location/insert', {
+            fetch('https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/location/insert', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -82,7 +82,7 @@
         // 定义一个函数来加载页面浏览量
         function loadPageViews(articleId) {
             // 替换这里的articleId为实际的文章ID，或者从URL中获取 http://localhost:3000/pageviews/:articleId
-            const url = `https://personalpage-express-mongodb.azurewebsites.net/pageviews/:articleId`;
+            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/pageviews/:articleId`;
             // const url = `http://localhost:3000/pageviews/:articleId`;
 
             fetch(url)
@@ -105,7 +105,7 @@
         // 定义一个函数来加载当日页面浏览量
         function loadDailyPageViews(articleId) {
             // 构建包含实际文章ID的URL
-            const url = `https://personalpage-express-mongodb.azurewebsites.net/pageViewsDaily`;
+            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/pageViewsDaily`;
             // const url = `http://localhost:3000/pageViewsDaily`;
             fetch(url)
                 .then(response => {
