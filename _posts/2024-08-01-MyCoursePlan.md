@@ -1,7 +1,8 @@
 ---
-title:  My Course Plan Studying Master of Computing at ANU
+title:  My Course Plan at ANU for Master of Computing(Advanced)
 tags:
   - Course Plan
+  - Master of Computing(Advanced)
   - Master of Computing
   - Australian National University
 ---
@@ -25,16 +26,16 @@ It will be updated if there are any changes.
 - COMP8011 Advanced Topics in Formal Methods and Programming Languages([link](https://programsandcourses.anu.edu.au/2024/course/COMP8011))
 
 #### 2025 S1
-- COMP8300 Parallel Systems ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8300))
-- COMP8460 Advanced Algorithms ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8460))
-- TBD
-- TBD
+- COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8300))
+- COMP8800 Advanced Computing Research Project （12 units）
+- COMP6445 Computing Research Methods ([link](https://programsandcourses.anu.edu.au/course/comp6445))
+- MATH8343 Foundations of Mathematics ([link](https://programsandcourses.anu.edu.au/2024/course/MATH8343))
 
 #### 2025 S2
-- TBD
-- TBD
-- TBD
-- TBD
+- COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/course/comp8800))
+- COMP8800 Advanced Computing Research Project （12 units）
+- COMP8045 Advanced Topics in Computer Systems & Architecture([link](https://programsandcourses.anu.edu.au/course/comp8045))
+- COMP8539 Advanced Topics in Computer Vision ([link](https://programsandcourses.anu.edu.au/course/comp8539))
 
 
 
