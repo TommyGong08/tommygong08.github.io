@@ -82,7 +82,10 @@ For the Master Theorem, remember all the formulas. Master Theorem is taught in w
 
 ### Week3
 #### Master Theorem
-
+Consider T(n)=a*T(n/b)+f(n), a>=1, b>=1.
+1. If 𝑓(𝑛) =𝑂(𝑛^{(log_𝑏^𝑎)−𝜖}) for some constant 𝜖>0,then  𝑇(𝑛) =Θ(𝑛^{log_𝑏^𝑎})
+2. If 𝑓(𝑛) =Θ(𝑛^{log_𝑏^𝑎}) ,then  𝑇(𝑛) =Θ(𝑛^{log_𝑏^𝑎}log(n))
+3. If 𝑓(𝑛) =\Omiga(𝑛^{(log_𝑏^𝑎)+𝜖}) for some constant 𝜖>0,and if 𝑎*𝑓(𝑛) ≤𝑐𝑓(𝑛) for some constant 𝑐<1 and 𝑛>𝑛0, then  𝑇(𝑛) =Θ(𝑛^{log_𝑏^𝑎}(log(n))^{k+1})
 
 
 #### Search Problem
@@ -171,7 +174,9 @@ Radix Sort uses Count Sort when comparing the same digit, therefore not in place
 
 #### The complexity
 Count Sort: O(N+M)
+
 Bucket Sort: Average Complexity O(n)
+
 Radix Sort: Average Complexity O(d*n)
 
 
