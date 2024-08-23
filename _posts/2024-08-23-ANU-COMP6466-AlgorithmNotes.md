@@ -8,17 +8,17 @@ tags:
   - Sort and Search
 ---
 
-I will be highlighting the key points covered in the ANU COMP6466 Algorithm Course. 
+I highlight the key points covered in the ANU COMP6466 Algorithm Course. 
 This course aims to develop students' proficiency in algorithm analysis and design. 
-The first five weeks focused on algorithm analysis, particularly deterministic and randomized algorithms, which I found very inspiring. 
+The first five weeks focused on algorithm analysis, sort and search algorithm, particularly deterministic and randomized algorithms, which I found very inspiring. 
 
 <!--more-->
 
-These notes serve for me as a quick refresher of the course content, so I've omitted many mathematical notations.
+These notes serve as a quick refresher of the course content for me, so I've omitted many mathematical notations.
 
-## Week1
+### Week1
 
-### Insertion Sort
+#### Insertion Sort
 Introduce the Insertion Sort, and its pseudocode is as follows, and the right side is the times the code executed: 
 ```
 for j = 2 to A.length                   # (n-1)
@@ -37,34 +37,34 @@ $$ = c'n + c'' (2+n) * (n-1) / 2$$
 $$ = O(n^2)$$
 
 
-### Useful But Forgettable Formulas
+#### Useful But Forgettable Formulas
 - $$\sum_{i=1}^{n}{i^2} = n*(n+1)(2n+1) / 6$$
 - $$\sum_{i=1}^{n}{1+a+a^2+a^3+...+a^n} = (a^(n+1)-1 ) / (a-1)$$
 - $$\sum_{i=1}^{n}{1^k+2^k+3^k+4^k+...+n^k} = (n^(k+1)) / (k+1)$$
 
-### Asymptotic Notations
+#### Asymptotic Notations
 
-| Notations           | Equality                      |
-|---------------------|-------------------------------|
-| f(n) = O(g(n))      | 0 <= f(n) <= c*g(n)           |
-| f(n) = o(g(n))      | 0 <= f(n) < c*g(n)            |
-| f(n) = \W(g(n))     | 0 < c*g(n) <= f(n)            |
-| f(n) = \w(g(n))     | 0 < c*g(n) < f(n)             |
-| f(n) = \sigma(g(n)) | 0 < c1*g(n) <= f(n)<= c2*g(n) |
+| Notations          | Equality                             |
+|--------------------|--------------------------------------|
+| f(n) = O(g(n))     | 0 <= f(n) <= c*g(n)                  |
+| f(n) = o(g(n))     | 0 <= f(n) < c*g(n)                   |
+| f(n) =  W(g(n))    | 0 < c*g(n) <= f(n)                   |
+| f(n) =  w(g(n))    | 0 < c*g(n) < f(n)                    |
+| f(n) = sigma(g(n)) | 0 < c1*g(n) <= f(n)<= c2*g(n)        |
 
-## Week2
+### Week2
 
-### A question
+#### A question
 So for all the f(n), will it satisfy f(n)=O(g(n)) or \sigma(g(n)) or \Omiga(g(n))?
 No, e.g. f(n) = n, g(n) = n^(1+sin(n)).
 
-### Time Complexity Order
+#### Time Complexity Order
 1 < log(n) < n < nlog(n) = log(n!) < n^2 < n^3 < 2^n < n!
 
-### Analysis
+#### Analysis
 
 
-### Recurrence Analysis
+#### Recurrence Analysis
 This part is one of the most important parts in this course. Three methods are introduced to help making recurrence Analysis:
 1. Substitution Method
 2. Recursion Tree
@@ -80,15 +80,75 @@ looks like as well. Finally, using mathematical induction to prove our guess.
 
 For the Master Theorem, remember all the formulas. Master Theorem is taught in week 3.
 
-## Week3
-### Master Theorem
+### Week3
+#### Master Theorem
 
 
-### Search Problem
+
+#### Search Problem
 1. Binary Search O(log(n))
 2. Two Sum Problem, do binary search for (v-a), time complexity: O(nlog(n))
 3. The shortest sub-array Sum (slide window method)
 
-### 
+#### Egg Dropping Problem
+1. If we have unlimited number of eggs, using binary search method to drop egg (O(log(n))).
+2. If we only have two eggs, using binary search + search from up to down.
+3. More optimization: minimize the regret, d+(d-1)+(d-2)+(d-3)+...+1 = n. The worst case is O(sqrt(n)) < O(n).
+
+#### Random Variable and Expectation
+1. Coupon Problem
+There are n kinds of coupons, how many coupons should we buy to collect n kinds of coupon.
+Suppose X is the total number of trails. x_i is the trails to get the i-th type of coupon under the condition that we have i-1 types of coupons.
+
+$$X = \Sum_{i=1}^{n}{x_i}$$
+
+$$E[X] = E[\Sum_{i=1}^{n}{x_i}] = \Sum_{i=1}^{n}{E[x_i]}$$
+
+When we have i-1 types of coupons, the probability that we get the i-th type coupon is:
+
+$$P_i = 1-(i-1)/n = (n-i+1) / n$$
+
+Therefore, E[x_i] = 1/ p_i = n / (n-i+1)
+ 
+$$\Sum_{i=1}^{n}{E[x_i]} = \Sum_{i=1}^{n}{(n)/(n-i+1)} = n * \Sum_{i=1}^{n}{1/(n-i+1) = n* \Sum_{j=0}^{n-i}{1/(j+1)}} = n*log(n) + c*n$$
+
+### Week4
+#### The expectation of the inversion in Insertion Sort
+In the Insertion Sort, the random step happens as we do the inversion of A[i] and A[j].
+Suppose X is the total number of the inversion times. x_{i, j} = 1 is the event that A[i] and A[j] need inversion.
+
+P_{i, j} = 1/2
+
+E[x] = E[\Sum_{i=1}^{n}\Sum_{j=i+1}^{n}{x_{i, j}}] = \Sum_{i=1}^{n}\Sum_{j=i+1}^{n}{P_{i, j}}
+
+=\Sum_{i=1}^{n}\Sum_{j=i+1}^{n}{1/2} = n*(n-1)/4
+
+#### RandQuick Sort
+
+The number of comparison between A[i] and A[j] is random. Let X be the number of comparison,
+x_{i, j} = 1 be the event that A[i] and A[j] compare. for a sequence from i to j.
+P_{i, j} = P(i as pivot) + P(j as pivot) = 1/ (j-i+1) + 1/(j-i+1) = 2/ (j-i+1)
+
+Therefore, E[x] = E[\Sum_{i=1}^{n}\Sum_{j=i+1}^{n}{x_{i, j} = 1}] = E[\Sum_{i=1}^{n}\Sum_{j=i+1}^{n}{2/(j-i+1)}] =  2 * \Sum_{i=1}^{n}(log(n)+r) = 2nlog(n) + c
+
+
+#### Randomized Algorithm
+
+1. Verifying Matrix Multiplication
+
+To verify the matrix multiplication A * B = C, we have basically deterministic algorithms, which takes O(n^3) and O(n^2.37) separately.
+However, with randomized algorithm, we reduce the complexity to O(n^2).
+
+Steps are:
+- Generate an 𝑛 × 1 random 0/1 vector 𝑟.
+- Compute𝑃=𝐴× 𝐵×𝑟 −𝐶𝑟
+- Output Yes if 𝑃 is equal to zero vector and No otherwise.
+- If 𝐴 × 𝐵 = 𝐶, then the algorithm always returns Yes.
+- If 𝐴 × 𝐵 ≠ 𝐶, then the probability it returns Yes is at most 1⁄2 (not proved in this course).
+
+Then we can repeat the original algorithm _k_ times. If all the outputs are Yes, then return Yes, otherwise return No.
+The probability it returns Yes while the answer is actually No is atmost 1 / 2^_k_.
+
+The time complexity of this randomized algorithm is O(k*n^2) = O(n^2).
 
 
