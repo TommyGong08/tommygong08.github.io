@@ -151,4 +151,30 @@ The probability it returns Yes while the answer is actually No is atmost 1 / 2^_
 
 The time complexity of this randomized algorithm is O(k*n^2) = O(n^2).
 
+### Week5
 
+#### In place and Stable
+Two important concepts of sorting algorithm is in place and stable.
+
+**In place** means the arrangement happens inside the array; does not need additional memory.
+
+**Stable** means elements with the same values appear in the output array in the same order as they appear in the input array.
+
+| Sort Methods-> | Insertion Sort | Merge Sort | RandQuick Sort | Count Sort | Bucket Sort | Radix Sort |
+|----------------|----------------|------------|----------------|------------|-------------|------------|
+| In place       | Yes            | No         | Yes            | No         | No          | No         |
+| Stable         | Yes            | Yes        | No             | Yes        | Yes         | Yes        |
+
+Bucket Sort use Insertion Sort inside its lists, therefore it's stable;
+
+Radix Sort uses Count Sort when comparing the same digit, therefore not in place but stable.
+
+#### The complexity
+Count Sort: O(N+M)
+Bucket Sort: Average Complexity O(n)
+Radix Sort: Average Complexity O(d*n)
+
+
+#### Divide-and-Conquer Problem
+
+O(nlog(n))
