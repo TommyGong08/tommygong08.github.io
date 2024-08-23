@@ -12,7 +12,10 @@ I will be highlighting the key points covered in the ANU COMP6466 Algorithm Cour
 This course aims to develop students' proficiency in algorithm analysis and design. 
 The first five weeks focused on algorithm analysis, particularly deterministic and randomized algorithms, which I found very inspiring. 
 
+<!--more-->
+
 These notes serve for me as a quick refresher of the course content, so I've omitted many mathematical notations.
+
 ## Week1
 
 ### Insertion Sort
@@ -80,5 +83,12 @@ For the Master Theorem, remember all the formulas. Master Theorem is taught in w
 ## Week3
 ### Master Theorem
 
+
+### Search Problem
+1. Binary Search O(log(n))
+2. Two Sum Problem, do binary search for (v-a), time complexity: O(nlog(n))
+3. The shortest sub-array Sum (slide window method)
+
+### 
 
 
