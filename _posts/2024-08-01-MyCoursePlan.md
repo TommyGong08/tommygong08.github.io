@@ -37,7 +37,8 @@ It will be updated if there are any changes.
 - COMP8045 Advanced Topics in Computer Systems & Architecture([link](https://programsandcourses.anu.edu.au/course/comp8045))
 - COMP8539 Advanced Topics in Computer Vision ([link](https://programsandcourses.anu.edu.au/course/comp8539))
 
-
+<body data-article-id="post-my-course-plan">
+</body>
 
 <div class="card mb-3">
     <img class="card-img-top" src="https://drscdn.500px.org/photo/127767019/q%3D80_m%3D1500/v2?webp=true&sig=dd1fa4580c459472969cd4992068922f311f12cf263cf08b39615cfc1812286b"/>

@@ -49,6 +49,9 @@ The final exam accounts for 55 marks. And the 3D vision is the most significant 
 of marks in the final exam. The questions of 3D vision in the final exams are often presented in the form of 
 calculation questions and comprehensive questions.
 
+<body data-article-id="post-comp6528-CV-notes">
+</body>
+
 <div class="card mb-3">
     <img class="card-img-top" src="https://drscdn.500px.org/photo/127767019/q%3D80_m%3D1500/v2?webp=true&sig=dd1fa4580c459472969cd4992068922f311f12cf263cf08b39615cfc1812286b"/>
     <div class="card-body bg-light">

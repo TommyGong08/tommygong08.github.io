@@ -26,8 +26,8 @@
                 "Loc": loc
             };
 
-            // 发送POST请求http://localhost:3000/location/insert
-            fetch('https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/location/insert', {
+            // 发送POST请求http://localhost:3000/api/locations/location/insert
+            fetch('https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/locations/location/insert', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -81,9 +81,9 @@
     <script>
         // 定义一个函数来加载页面浏览量
         function loadPageViews(articleId) {
-            // 替换这里的articleId为实际的文章ID，或者从URL中获取 http://localhost:3000/pageviews/:articleId
-            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/pageviews/:articleId`;
-            // const url = `http://localhost:3000/pageviews/:articleId`;
+            // 替换这里的articleId为实际的文章ID，或者从URL中获取 http://localhost:3000/api/articles/pageviews/${articleId}
+            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/pageviews/${articleId}`;
+            //const url = `http://localhost:3000/api/articles/pageviews/${articleId}`;
 
             fetch(url)
                 .then(response => {
@@ -105,8 +105,8 @@
         // 定义一个函数来加载当日页面浏览量
         function loadDailyPageViews(articleId) {
             // 构建包含实际文章ID的URL
-            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/pageViewsDaily`;
-            // const url = `http://localhost:3000/pageViewsDaily`;
+            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/pageviews-daily/${articleId}`;
+            //const url = `http://localhost:3000/api/articles/pageviews-daily/${articleId}`;
             fetch(url)
                 .then(response => {
                     if (!response.ok) {
@@ -124,12 +124,9 @@
                 });
         }
 
-        // 假设你已经知道文章ID，或者从URL中解析它
-        // 这里我们直接用一个示例ID
-        const articleId = 'https://tommygong08.github.io/';
-
         // 页面加载完成后调用函数
         window.onload = function() {
+            const articleId = document.body.getAttribute('data-article-id');
             loadPageViews(articleId);
             loadDailyPageViews(articleId);
         };
