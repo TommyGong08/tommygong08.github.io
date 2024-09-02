@@ -45,13 +45,15 @@ I am happy to share and discuss the previous projects, technology details and re
 
 
 <body data-article-id="homepage">  
-<h5> Page Views</h5>
-<span id="page-views-today">Loading...</span>
-<br />
-<span id="page-views">Loading...</span>
 
-<br />
-<br />
+
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
+
+<br />c
 
 <h5> Visitors Map </h5>
 <div id="mapid"></div>  

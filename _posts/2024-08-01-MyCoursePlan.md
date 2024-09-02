@@ -13,6 +13,13 @@ It will be updated if there are any changes.
 
 <!--more-->
 
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
+<br>
+
 #### 2024 S1
 - COMP6262 Logic ([link](https://programsandcourses.anu.edu.au/course/comp6262))
 - COMP6528 Computer Vision ([link](https://programsandcourses.anu.edu.au/2024/course/COMP6528))
@@ -48,3 +55,6 @@ It will be updated if there are any changes.
         </div>
     </div>
 </div>
+
+
+

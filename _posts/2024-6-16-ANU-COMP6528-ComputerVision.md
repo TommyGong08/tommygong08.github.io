@@ -17,6 +17,13 @@ I highly recommend COMP6528 to every student studying computing here.
 
 <!--more-->
 
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
+<br>
+
 #### Course Structured
 COMP6528 covers low-level, mid-level, and high-level vision, as well as 3D vision. During the first six weeks before 
 the mid-break, Dr. Miaomiao Liu taught us about low-level vision and most of the mid-level and high-level vision topics.

@@ -14,6 +14,13 @@ The first five weeks focused on algorithm analysis, sort and search algorithm, p
 
 <!--more-->
 
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
+<br>
+
 These notes serve as a quick refresher of the course content for me, so I've omitted many mathematical notations.
 
 ### Week1

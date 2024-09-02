@@ -11,6 +11,13 @@ document. Understanding MongoDB is crucial for back-end development, particularl
 
 <!--more-->
 
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
+<br>
+
 ### Useful Commands
 
 #### A. Search Commands
@@ -213,6 +220,11 @@ db.collectionName.aggregate([
 <body data-article-id="post-mongodb-notes">
 </body>
 
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
 
 
 
