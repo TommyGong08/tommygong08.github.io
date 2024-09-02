@@ -36,7 +36,7 @@ It will be updated if there are any changes.
 - COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8300))
 - COMP8800 Advanced Computing Research Project （12 units）
 - COMP6445 Computing Research Methods ([link](https://programsandcourses.anu.edu.au/course/comp6445))
-- MATH8343 Foundations of Mathematics ([link](https://programsandcourses.anu.edu.au/2024/course/MATH8343))
+- COMP8460 Advanced Algorithm ([link](https://programsandcourses.anu.edu.au/2024/course/comp8460))
 
 #### 2025 S2
 - COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/course/comp8800))
