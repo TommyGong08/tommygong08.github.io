@@ -53,7 +53,7 @@ I am happy to share and discuss the previous projects, technology details and re
         <span id="page-views">Loading...</span>
 </div>
 
-<br />c
+<br />
 
 <h5> Visitors Map </h5>
 <div id="mapid"></div>  
