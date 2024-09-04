@@ -109,6 +109,32 @@
             display: block;
             margin-bottom: 5px;
         }
+
+        .like-button-container {
+        margin-top: 20px;
+        text-align: center;
+        }
+
+        #like-button {
+            font-size: 1.0em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        #like-button:hover {
+            background-color: #0056b3;
+        }
+
+        #like-count {
+            font-size: 1.2em;
+            margin-left: 10px;
+            color: #555;
+        }
+
     </style>
 
     <script>
@@ -157,11 +183,55 @@
                 });
         }
 
+        function incrementLike() {
+            const articleId = document.body.getAttribute('data-article-id');
+            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/like/${articleId}`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('like-count').textContent = `Likes: ${data.likes}`;
+            })
+            .catch(error => {
+                console.error('There was a problem with the like request:', error);
+            });
+        }
+
+        function loadLikeCount(articleId) {
+            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/like-count/${articleId}`;
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('like-count').textContent = `Likes: ${data.likes}`;
+                })
+                .catch(error => {
+                    console.error('There was a problem fetching the like count:', error);
+                    document.getElementById('like-count').textContent = 'Error loading like count';
+                });
+        }
+
         // 页面加载完成后调用函数
         window.onload = function() {
             const articleId = document.body.getAttribute('data-article-id');
             loadPageViews(articleId);
             loadDailyPageViews(articleId);
+            loadLikeCount(articleId);
         };
     </script>
 

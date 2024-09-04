@@ -220,10 +220,9 @@ db.collectionName.aggregate([
 <body data-article-id="post-mongodb-notes">
 </body>
 
-<div class="page-views-container">
-        <h6>Page Views</h6>
-        <span id="page-views-today">Loading...</span>
-        <span id="page-views">Loading...</span>
+<div class="like-button-container">
+    <button id="like-button" onclick="incrementLike()">👍 Like</button>
+    <span id="like-count">Loading...</span>
 </div>
 
 

@@ -195,3 +195,8 @@ O(nlog(n))
 <body data-article-id="post-algorithm-notes">
 
 </body>
+
+<div class="like-button-container">
+    <button id="like-button" onclick="incrementLike()">👍 Like</button>
+    <span id="like-count">Loading...</span>
+</div>

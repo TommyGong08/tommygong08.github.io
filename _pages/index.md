@@ -127,5 +127,11 @@ I am happy to share and discuss the previous projects, technology details and re
         })  
         .catch(error => console.error('Error fetching data:', error));   
 </script>  
+
+<div class="like-button-container">
+    <button id="like-button" onclick="incrementLike()">👍 Like</button>
+    <span id="like-count">Loading...</span>
+</div>
+
 </body>
 
