@@ -11,6 +11,13 @@ For learning(beginners), recapping, exams preparation.
 
 <!--more-->
 
+<div class="page-views-container">
+        <h6>Page Views</h6>
+        <span id="page-views-today">Loading...</span>
+        <span id="page-views">Loading...</span>
+</div>
+<br>
+
 #### Outline
 1. Week 1 - Course Introduction and Von Neumann Architecture Measuring Performance
 2. Week 2 - Computing with Real Numbers
@@ -34,11 +41,11 @@ Comparing the following two Matrix Transpose version;
 
 Version 1:
 
-![Version1](./figs/0909/1.jpg)
+![Version1](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/1.jpg?raw=true)
 
 Version 2:
 
-![Version2](./figs/0909/2.jpg)
+![Version2](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/2.jpg?raw=true)
 In version 1, Reads are stride 1, and Writes are stride N.
 When we analyse the overall performance of these code, N and Cache Write policy should be taken into account.
 For a small N, we don't need to consider the cache read miss and write miss. But for a large N, analysing the cache status is quite important.
@@ -48,7 +55,7 @@ The overall performance of version 2 better than version 1, as the Reads are str
 
 Version 3: Loop Unrolling + Flipping
 
-![Version3](./figs/0909/3.jpg)
+![Version3](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/3.jpg?raw=true)
 
 Less cache misses per iteration by loop unrolling.
 
@@ -65,7 +72,7 @@ The slide introduces three methods to improve the performance.
 
 The original code for Matrix Multiply is :
 
-![Original](./figs/0909/4.jpg)
+![Original](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/4.jpg?raw=true)
 
 The time complexity of the original method is O(N^3).
 The cache miss situation for this code is:
@@ -75,7 +82,7 @@ The cache miss situation for this code is:
 
 Then we may do outer loop flipping:
 
-![Image5](./figs/0909/5.jpg)
+![Image5](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/5.jpg?raw=true)
 
 The cache miss situation for this code is:
 1. Reads from A with stride 1
@@ -87,7 +94,7 @@ Though make outer loop flipping, we may find the GFlops essentially the same. Be
 
 Next, transpose matrix B:
 
-![Image6](./figs/0909/6.jpg)
+![Image6](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/6.jpg?raw=true)
 
 After generate Matrix D by transposing Matrix B, we could make the inner loop with:
 1. Reads from A with stride 1
@@ -97,7 +104,7 @@ The time complexity of Transpose Matrix B is O(N^2).
 
 Next, try to make further optimization. We can flip the k loop.
 
-![Image7](./figs/0909/7.jpg)
+![Image7](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/7.jpg?raw=true)
 
 1. Reads from A constant
 2. Reads from D with stride 1
