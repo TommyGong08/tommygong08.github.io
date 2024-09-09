@@ -21,8 +21,8 @@ For learning(beginners), recapping, exams preparation.
 
 
 ### Week 6
-This week's lecture mainly talking about the data access optimisations. Two examples, the matrix transpose and matrix 
-multiply are given to show how to optimize data access.
+This week’s lecture mainly talks about data access optimizations. Two examples, the matrix transpose and matrix multiply
+are given to show how to optimize data access.
 
 #### Matrix Transpose
 The operations to generally optimize matrix transpose:
@@ -33,22 +33,12 @@ The operations to generally optimize matrix transpose:
 Comparing the following two Matrix Transpose version;
 
 Version 1:
-```c
-for (i = 0; i < N; i ++) {
-    for (j = 0; j < N; j ++) {
-        A[j*N + i] = B[i*N + j];
-    } 
-}
-```
+
+![Version1](./figs/0909/1.jpg)
 
 Version 2:
-```c
-for (j = 0; j < N; j ++){
-    for (i = 0; i < N; i ++) {
-        A[j*N + i] = B[i*N + j];
-    } 
-}
-```
+
+![Version2](./figs/0909/2.jpg)
 In version 1, Reads are stride 1, and Writes are stride N.
 When we analyse the overall performance of these code, N and Cache Write policy should be taken into account.
 For a small N, we don't need to consider the cache read miss and write miss. But for a large N, analysing the cache status is quite important.
@@ -57,14 +47,9 @@ Since writes miss is more expensive than reads miss both in write-through or wri
 The overall performance of version 2 better than version 1, as the Reads are stride N, and Writes are stride 1.
 
 Version 3: Loop Unrolling + Flipping
-```c
-for (j = 0; j < N; j ++){
-    for (i = 0; i < N; i ++) {
-        A[j *N + i] = B[i*N + j];
-        A[(j+1) *N + i] = B[i*N + j+1];
-    } 
-}
-```
+
+![Version3](./figs/0909/3.jpg)
+
 Less cache misses per iteration by loop unrolling.
 
 Version 4: Blocking Algorithm of Matrix Transpose.
@@ -79,17 +64,8 @@ The slide introduces three methods to improve the performance.
 - Blocking
 
 The original code for Matrix Multiply is :
-```c
-for (int j = 0; j < N; j ++) { 
-    for(int i = 0; i < N; i ++) {
-    float s = 0.0;
-        for (int k = 0; k < N; k ++) {
-              s += A[N*i + k] * B[N*k + j];
-        }
-        C[N*i + j] = s;
-    }
-}
-```
+
+![Original](./figs/0909/4.jpg)
 
 The time complexity of the original method is O(N^3).
 The cache miss situation for this code is:
@@ -98,17 +74,9 @@ The cache miss situation for this code is:
 3. Writes to C with stride N
 
 Then we may do outer loop flipping:
-```c
-for(int i = 0; i < N; i ++) { 
-    for (int j = 0; j < N; j ++) {
-    float s = 0.0;
-        for (int k = 0; k < N; k ++) {
-              s += A[N*i + k] * B[N*k + j];
-        }
-        C[N*i + j] = s;
-    }
-}
-```
+
+![Image5](./figs/0909/5.jpg)
+
 The cache miss situation for this code is:
 1. Reads from A with stride 1
 2. Reads from B with stride N
@@ -118,19 +86,9 @@ Though make outer loop flipping, we may find the GFlops essentially the same. Be
  use L2 cache. L1 cache is not enough.
 
 Next, transpose matrix B:
-```c
-float *D = malloc(sizeof(float) * N * N);
-tranpose(B, D);
-for (int i = 0; i < N; i ++) { 
-    for (int j = 0; j < N; j ++) {
-        float s = 0.0;
-        for (int k = 0; k < N; k ++) {
-            s += A[N*i + k] * D[N*j + k];
-        }
-    }
-    C[N*i + j] = s;
-    free(D);
-```
+
+![Image6](./figs/0909/6.jpg)
+
 After generate Matrix D by transposing Matrix B, we could make the inner loop with:
 1. Reads from A with stride 1
 2. Reads from D with stride 1
@@ -138,17 +96,9 @@ After generate Matrix D by transposing Matrix B, we could make the inner loop wi
 The time complexity of Transpose Matrix B is O(N^2).
 
 Next, try to make further optimization. We can flip the k loop.
-```c
-float *D = malloc(sizeof(float) * N * N);
-tranpose(B, D);
-for (int k = 0; k < N; k ++){
-    for (int i = 0; i < N; i ++) { 
-        for (int j = 0; j < N; j ++) {
-            C[N*i + k] += A[N*i + k] * B[N*k + j];
-        }
-    }
-}
-```
+
+![Image7](./figs/0909/7.jpg)
+
 1. Reads from A constant
 2. Reads from D with stride 1
 3. Writes to C with stride 1
@@ -174,3 +124,12 @@ The fewer cache misses, the better the code. The less memory access, the better 
 
 
 (Continuous updates ... )
+
+
+<body data-article-id="post-comp6464-HPC-notes">
+</body>
+
+<div class="like-button-container">
+    <button id="like-button" onclick="incrementLike()">👍 Like</button>
+    <span id="like-count">Loading...</span>
+</div>
