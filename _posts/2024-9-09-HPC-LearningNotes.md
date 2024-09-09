@@ -46,6 +46,7 @@ Version 1:
 Version 2:
 
 ![Version2](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/2.jpg?raw=true)
+
 In version 1, Reads are stride 1, and Writes are stride N.
 When we analyse the overall performance of these code, N and Cache Write policy should be taken into account.
 For a small N, we don't need to consider the cache read miss and write miss. But for a large N, analysing the cache status is quite important.
@@ -112,10 +113,9 @@ Next, try to make further optimization. We can flip the k loop.
 
 This flipping k loop operation could result in significant improvement in GFlops.
 
-
-Last but not the least, blocking algorithm is one of optimization methods. However, we need to pay attention to the balance 
-between block size and cache miss rate. From the experience results, block size of 8 gives the better performance.
-
+Last but not least, the blocking algorithm is one of the optimization methods. However, we need to pay attention to the 
+balance between block size and cache miss rate. From the results of the experience, a block size of 8 gives better 
+performance.
 
 #### Summary
 Once we want to do data access optimization, think about the following methods:
