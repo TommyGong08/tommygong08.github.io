@@ -26,6 +26,68 @@ For learning(beginners), recapping, exams preparation.
 5. Week 5 - Scalar Profiling and Compiler Optimisations
 6. Week 6 - Data Access Optimisations
 
+### Week 5
+
+#### Compiler Auto-vectorization
+Compiler auto-vectorization is one of the methods to make SIMD operations.
+
+Using -O3 to enable vectorization in GCC.
+
+It's easy to think about converting loops into vectorized operations. However, not all kinds of loops are good candidate 
+for auto-vectorization. The property of good loops:
+1. countable.
+2. No break.
+3. No branch.
+4. No function call.
+5. No aliasing.
+6. No data dependencies(RAW, WAW, WAR).
+
+So right now, we may know some tips to improve auto-vectorization. (Try to make the loop become a good loop.)
+
+If the loops carry dependency or function calls
+
+##### Example 1 SAXPY
+
+Compiling the code using vectorization options:
+**gcc -c -O3 -fopt-info-vec-all saxpy.c**
+
+##### XMM YMM ZMM
+- XMM (128-bit): used for processing floating point or small vectors, belongs to SSE instruction set.
+- YMM (256-bit): Used for processing larger vector data, belonging to the AVX instruction set.
+- ZMM (512-bit): Provides the highest level of parallelism for handling larger-scale data, belonging to the AVX-512 instruction set.
+
+##### Useful GCC flags 
+These are some gcc optimization flags that we need to remember:
+
+- -O3: Enables advanced optimizations to improve performance.
+- -mavx2: Enables the AVX2 instruction set, using 256-bit vector registers to accelerate computations.
+- -mavx512f: Enables the AVX-512 instruction set, using 512-bit registers for even higher parallelism.
+- -mprefer-vector-width=512: Prefers 512-bit vector width when vectorizing, combined with AVX-512 for performance boosts.
+- -funsafe-math-optimizations: Enables unsafe math optimizations, potentially boosting performance but at the cost of some accuracy.
+
+#### Compiler Intrinsic Functions
+Compiler intrinsic functions provide a method to directly call compiler instructions. However, using compiler intrinsic 
+is not portable. Therefore, conditional compiling must be used to make sure the program can run on computing systems 
+with different instruction set.
+
+![Version1](https://github.com/TommyGong08/tommygong08.github.io/blob/main/_posts/figs/0909/5-1.jpg?raw=true)
+
+#### Intel Intrinsic Guide
+If you forget the names of intel intrinsic guide functions, refer to:
+ https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html
+
+
+#### Optimizing SAXPY By Intrinsic Functions
+Know how to use _mm256_loadu_ps, _mm256_fmadd_ps, _mm256_mul_ps, _mm256_add_ps to realize Parallelized SAXPY.
+
+Remember two methods to optimze SAXPY(Single-precision A X Plus Y):
+1. AVX
+2. FMA
+
+FMA uses _mm256_fmadd_ps, integrating both _mm256_mul_ps and _mm256_add_ps.
+
+**Further optimization**: Combining Loop unrolling and FMA/AVX, you could get higher FLOPS and Less Cycles.
+<br>
 
 ### Week 6
 This week’s lecture mainly talks about data access optimizations. Two examples, the matrix transpose and matrix multiply
