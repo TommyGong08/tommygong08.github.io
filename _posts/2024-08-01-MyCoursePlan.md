@@ -34,13 +34,13 @@ It will be updated if there are any changes.
 
 #### 2025 S1
 - COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/2024/course/COMP8300))
-- COMP8800 Advanced Computing Research Project （12 units）
+- COMP8800（12 units）
 - COMP6445 Computing Research Methods ([link](https://programsandcourses.anu.edu.au/course/comp6445))
-- COMP8460 Advanced Algorithm ([link](https://programsandcourses.anu.edu.au/2024/course/comp8460))
+- COMP8300 Parallel Systems ([link](https://programsandcourses.anu.edu.au/2024/course/comp8300))
 
 #### 2025 S2
 - COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/course/comp8800))
-- COMP8800 Advanced Computing Research Project （12 units）
+- COMP8800（12 units）
 - COMP8045 Advanced Topics in Computer Systems & Architecture([link](https://programsandcourses.anu.edu.au/course/comp8045))
 - COMP8539 Advanced Topics in Computer Vision ([link](https://programsandcourses.anu.edu.au/course/comp8539))
 
