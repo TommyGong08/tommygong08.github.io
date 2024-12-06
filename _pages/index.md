@@ -32,6 +32,7 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ### News
+- **\[Nov.2024\]** I completed my second semester at ANU with two High Distinctions, one Distinction, resulting in a GPA of 6.67/7.0 and overall GPA of 6.43/7.0 in the first year!
 - **\[June.2024\]** I completed my first semester at ANU with two High Distinctions, one Distinction, and one Credit, resulting in a GPA of 6.25/7.0!
 - **\[Feb.2024\]** I began my Master of Computing studies at Australian National University, specializing in Computational Foundations!
 - **\[Nov.2023\]** The paper about Multi-stream Information Fusion in Low-illumination Scenarios is accepted by IEEE T-ITS!
