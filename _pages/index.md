@@ -15,10 +15,10 @@ title: Welcome to Hailong's Personal Page
 
 ## Education Background
 
-|         Year          |                                  Institute                                  | <img width=20/> Degree                              |
-|:---------------------:|:---------------------------------------------------------------------------:|:----------------------------------------------------|
-|      2024.2-now       |  <img src="./doc/ANU_Logo.png" width="20"/> Australian National University  | <img width=20/>M.S. Computing (Advanced)            |
-|     2018.9-2022.6     | <img src="./doc/BIT_Logo.png" width="20"/>  Beijing Institute of Technology | <img width=20/>B.S. Computer Science and Technology |
+|         Year          |                                                                    Institute                                                                    | <img width=20/> Degree                              |
+|:---------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------|
+|      2024.2-now       |  <img src="https://github.com/TommyGong08/tommygong08.github.io/blob/main/_pages/doc/ANU_Logo.png" width="20"/> Australian National University  | <img width=20/>M.S. Computing (Advanced)            |
+|     2018.9-2022.6     | <img src="https://github.com/TommyGong08/tommygong08.github.io/blob/main/_pages/doc/BIT_Logo.png" width="20"/>  Beijing Institute of Technology | <img width=20/>B.S. Computer Science and Technology |
 
 <br />
 
