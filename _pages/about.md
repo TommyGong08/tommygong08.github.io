@@ -13,6 +13,12 @@ images:
 
 {% include components/intro.md %}
 <br />
+
+## Professional Service
+
+- Reviewer for *IEEE Transactions on Intelligent Transportation Systems (T-ITS)*  
+- Reviewer for *IEEE Internet of Things Journal (IoT-J)*
+
 ## Conference and Journal Papers
 
 - Leveraging Multi-Stream Information Fusion for Trajectory Prediction in Low-Illumination Scenarios: A Multi-Channel Graph Convolutional Approach<br>
