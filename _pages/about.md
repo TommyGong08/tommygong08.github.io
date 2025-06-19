@@ -14,6 +14,11 @@ images:
 {% include components/intro.md %}
 <br />
 
+## Research Interests
+Computer architecture, photonic computing, heterogeneous computing, FPGA-based neural network acceleration, 
+photonic-electronic hybrid systems, high-performance systems for AI workloads.
+
+
 ## Professional Service
 
 - Reviewer for *IEEE Transactions on Intelligent Transportation Systems (T-ITS)*  
