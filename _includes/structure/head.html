@@ -27,7 +27,7 @@
             };
 
             // 发送POST请求http://localhost:3000/api/locations/location/insert
-            fetch('https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/locations/location/insert', {
+            fetch('https://personal-page-express-mongodb.onrender.com/api/locations/location/insert', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -141,7 +141,7 @@
         // 定义一个函数来加载页面浏览量
         function loadPageViews(articleId) {
             // 替换这里的articleId为实际的文章ID，或者从URL中获取 http://localhost:3000/api/articles/pageviews/${articleId}
-            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/pageviews/${articleId}`;
+            const url = `https://personal-page-express-mongodb.onrender.com/api/articles/pageviews/${articleId}`;
             //const url = `http://localhost:3000/api/articles/pageviews/${articleId}`;
 
             fetch(url)
@@ -164,7 +164,7 @@
         // 定义一个函数来加载当日页面浏览量
         function loadDailyPageViews(articleId) {
             // 构建包含实际文章ID的URL
-            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/pageviews-daily/${articleId}`;
+            const url = `https://personal-page-express-mongodb.onrender.com/api/articles/pageviews-daily/${articleId}`;
             //const url = `http://localhost:3000/api/articles/pageviews-daily/${articleId}`;
             fetch(url)
                 .then(response => {
@@ -185,7 +185,7 @@
 
         function incrementLike() {
             const articleId = document.body.getAttribute('data-article-id');
-            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/like/${articleId}`;
+            const url = `https://personal-page-express-mongodb.onrender.com/api/articles/like/${articleId}`;
 
             fetch(url, {
                 method: 'POST',
@@ -208,7 +208,7 @@
         }
 
         function loadLikeCount(articleId) {
-            const url = `https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/articles/like-count/${articleId}`;
+            const url = `https://personal-page-express-mongodb.onrender.com/api/articles/like-count/${articleId}`;
 
             fetch(url)
                 .then(response => {
