@@ -6,9 +6,10 @@
 Hailong(Steven) Gong is now a postgraduate student at Australian National University, pursuing **Master of Computing (advanced)** since February 2024.
 Before that, he received the Bachelor's degree in Computer Science and Technology from Beijing Institute of Technology in 2022.
 
-<font color="#dd0000">Currently, Hailong is conducting [research](https://tommygong08.github.io/about.html) in Photonic Computing. 
+Currently, Hailong is conducting [research](https://tommygong08.github.io/about.html) in Photonic Computing. 
 Meanwhile,he is also actively seeking **PhD opportunity** in Australia, and he is expected to graduate from ANU on November 2025.
-</font>
+
+<br />
 
 Please click [here](https://tommygong08.github.io/2024/08/01/MyCoursePlan.html) to see his course plan .
 
