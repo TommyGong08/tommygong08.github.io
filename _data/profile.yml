@@ -26,6 +26,10 @@
   href: mailto:hailong.gong@anu.edu.au
   icon: entypo/mail.svg
 
+- caption: ORCID
+  href: https://orcid.org/0000-0001-5467-7410
+  icon: entypo/bookmarks.svg
+
 - caption: Canberra
   href: https://en.wikipedia.org/wiki/Canberra
   icon: entypo/location-pin.svg

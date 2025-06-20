@@ -9,8 +9,6 @@ Before that, he received the Bachelor's degree in Computer Science and Technolog
 Currently, Hailong is conducting [research](https://tommygong08.github.io/about.html) in Photonic Computing. 
 Meanwhile,he is also actively seeking **PhD opportunity** in Australia, and he is expected to graduate from ANU on November 2025.
 
-<br />
-
 Please click [here](https://tommygong08.github.io/2024/08/01/MyCoursePlan.html) to see his course plan .
 
 
