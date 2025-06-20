@@ -121,7 +121,7 @@ I am happy to share and discuss the previous projects, technology details and re
     }  
   
     // 使用fetch API从服务器获取数据  http://localhost:3000/location/get-latest
-    fetch('https://homepage-backend-mongodb-fkhah3dwfbd4d4bh.australiaeast-01.azurewebsites.net/api/locations/location/get-latest')  
+    fetch('https://personal-page-express-mongodb.onrender.com/api/locations/location/get-latest')  
         .then(response => response.json())  
         .then(data => {  
             // 假设返回的数据是一个数组  
