@@ -23,6 +23,7 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ## Experience
+- Research Student (Topic: Photonic Computing) at ANU (2024.12 - now)
 - AOI Algorithmic Engineer at Shenzhen Yimeizhi Technology Co,.Ltd. (2023.3- 2023.12)
 - Research Assistant at BIT supervised by [Prof. Jianwei Gong](https://me-english.bit.edu.cn/people/facultydept/vehiclee2/xs3/b125047.htm) and [Prof. Chao Lu](https://scholar.google.com/citations?user=0Jv8_7MAAAAJ&hl=zh-CN) ( 2022.7- 2023.1)
 - Internship in ByteDance as Algorithm Engineer develop [Fastbot](https://github.com/bytedance/Fastbot_Android)( 2021.10-2022.3)
