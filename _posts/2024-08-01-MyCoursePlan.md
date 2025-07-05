@@ -41,7 +41,7 @@ It will be updated if there are any changes.
 #### 2025 S2
 - COMP8800 Advanced Computing Research Project ([link](https://programsandcourses.anu.edu.au/course/comp8800))
 - COMP8800（12 units）
-- COMP8045 Advanced Topics in Computer Systems & Architecture([link](https://programsandcourses.anu.edu.au/course/comp8045))
+- COMP8430 Data Wrangling([link](https://programsandcourses.anu.edu.au/course/comp8430))
 - COMP8539 Advanced Topics in Computer Vision ([link](https://programsandcourses.anu.edu.au/course/comp8539))
 
 <body data-article-id="post-my-course-plan">

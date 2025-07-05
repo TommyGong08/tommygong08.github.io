@@ -33,6 +33,7 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ### News
+- **\[July.2025\]** I completed the third semester at ANU with two High Distinctions, resulting in a GPA of 7.0/7.0 and overall GPA of 6.56/7.0!
 - **\[April.2025\]**  I was invited to serve as a reviewer for *IEEE Transactions on Intelligent Transportation Systems (T-ITS)* and *IEEE Internet of Things Journal (IoT-J)*!
 - **\[Dec.2024\]** I started the research project(thesis) (Topic: Ultra-fast Photonic Computing for Deep Learning Acceleration) at ANU under the supervision of [Dr. Amanda Barnard](https://comp.anu.edu.au/people/amanda-barnard/) and [Dr. Haibo Zhang](https://haibozhang-web.github.io/)! 
 - **\[Nov.2024\]** I completed my second semester at ANU with two High Distinctions, one Distinction, resulting in a GPA of 6.67/7.0 and overall GPA of 6.43/7.0 in the first year!
