@@ -23,7 +23,7 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ## Experience
-- Research Student at ANU (2024.12 - now)
+- Research Student at ANU doing research on Photonic Computing (2024.12 - now)
 - AOI Algorithmic Engineer at Shenzhen Yimeizhi Technology Co,.Ltd. (2023.3- 2023.12)
 - Research Assistant at BIT supervised by [Prof. Jianwei Gong](https://me-english.bit.edu.cn/people/facultydept/vehiclee2/xs3/b125047.htm) and [Prof. Chao Lu](https://scholar.google.com/citations?user=0Jv8_7MAAAAJ&hl=zh-CN) ( 2022.7- 2023.1)
 - Internship in ByteDance as Algorithm Engineer develop [Fastbot](https://github.com/bytedance/Fastbot_Android)( 2021.10-2022.3)
@@ -33,15 +33,16 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ### News
-- **\[July.2025\]** I completed the third semester at ANU with two High Distinctions, resulting in a GPA of 7.0/7.0 and overall GPA of 6.56/7.0!
+- **\[July.2025\]** I completed the third semester at ANU with two High Distinctions, resulting in a GPA of **7.0/7.0** and overall GPA of **6.56/7.0**!
 - **\[April.2025\]**  I was invited to serve as a reviewer for *IEEE Transactions on Intelligent Transportation Systems (T-ITS)* and *IEEE Internet of Things Journal (IoT-J)*!
-- **\[Dec.2024\]** I started the research project(thesis) (Topic: Ultra-fast Photonic Computing for Deep Learning Acceleration) at ANU under the supervision of [Dr. Amanda Barnard](https://comp.anu.edu.au/people/amanda-barnard/) and [Dr. Haibo Zhang](https://haibozhang-web.github.io/)! 
+- **\[Dec.2024\]** I started the research project(thesis) at ANU under the supervision of [Dr. Amanda Barnard](https://comp.anu.edu.au/people/amanda-barnard/) and [Dr. Haibo Zhang](https://haibozhang-web.github.io/)! 
 - **\[Nov.2024\]** I completed my second semester at ANU with two High Distinctions, one Distinction, resulting in a GPA of 6.67/7.0 and overall GPA of 6.43/7.0 in the first year!
 - **\[June.2024\]** I completed my first semester at ANU with two High Distinctions, one Distinction, and one Credit, resulting in a GPA of 6.25/7.0!
-- **\[Feb.2024\]** I began my Master of Computing studies at Australian National University, specializing in Computational Foundations!
+- **\[Feb.2024\]** I start my Master of Computing(Advanced) studies at Australian National University, specializing in Computational Foundations!
 - **\[Nov.2023\]** The paper about Multi-stream Information Fusion in Low-illumination Scenarios is accepted by IEEE T-ITS!
 - **\[July.2023\]** Our research work on Online Risk Assessment for Human-robot Interaction is accepted by ITSC 2024!
-- **\[Mar.2023\]** I join in Shenzhen Image Technology Co.,Ltd as full-time Algorithm Engineer, developing and optimizing algorithms for defect detection!
+
+[//]: # (- **\[Mar.2023\]** I join in Shenzhen Image Technology Co.,Ltd as full-time Algorithm Engineer, developing and optimizing algorithms for defect detection!)
 <br />
 
 ### Contact
