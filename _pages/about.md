@@ -18,10 +18,11 @@ images:
 Computer architecture, photonic computing, heterogeneous computing, FPGA-based neural network acceleration, 
 photonic-electronic hybrid systems, high-performance systems for AI workloads.
 
-## Photonic Computing System Development
+<br />
 
-Our team built a <font color="#dd0000"><b>photonic computing prototype</b></font> for high-speed and energy-efficient matrix computation!  
-As part of my master's thesis, I developed <font color="#dd0000"><b>LightMat: A Hybrid Photonic–Electronic System for General Matrix Multiplication</b></font>, including system integration and experimental validation.
+## Photonic Computing System Development
+As part of my master's thesis, I developed <font color="#ff0000"><b>LightMat: A Hybrid Photonic–Electronic System for General Matrix Multiplication</b></font>, including system integration and experimental validation!
+This system is developed based on our team's <font color="#ff0000"><b>photonic computing prototype</b></font> for high-speed and energy-efficient matrix computation. 
 
 <div style="text-align:center;">
   <iframe src="https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/preview"
