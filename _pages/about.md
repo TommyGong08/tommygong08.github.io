@@ -26,7 +26,7 @@ As part of my master's thesis, I developed **LightMat: A Hybrid Photonic–Elect
 [//]: # ([**Video Demonstration**]&#40;https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/view&#41;)
 <div style="text-align:center;">
   <iframe src="https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/preview"
-          width="800" height="450" allow="autoplay">
+          width="680" height="350" allow="autoplay">
   </iframe>
 </div>
 
