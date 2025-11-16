@@ -20,7 +20,7 @@ photonic-electronic hybrid systems, high-performance systems for AI workloads.
 
 ## Photonic Computing System Development
 
-Our team built a <font color="#dd0000"><b>photonic computing prototype</b></font> for high-speed and energy-efficient matrix computation.  
+Our team built a <font color="#dd0000"><b>photonic computing prototype</b></font> for high-speed and energy-efficient matrix computation!  
 As part of my master's thesis, I developed <font color="#dd0000"><b>LightMat: A Hybrid Photonic–Electronic System for General Matrix Multiplication</b></font>, including system integration and experimental validation.
 
 <div style="text-align:center;">
@@ -29,7 +29,7 @@ As part of my master's thesis, I developed <font color="#dd0000"><b>LightMat: A 
   </iframe>
 </div>
 
-
+<br />
 
 ## Professional Service
 
