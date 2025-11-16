@@ -25,7 +25,7 @@ As part of my master's thesis, I developed <font color="#dd0000"><b>LightMat: A 
 
 <div style="text-align:center;">
   <iframe src="https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/preview"
-          width="680" height="350" allow="autoplay">
+          width="720" height="400" allow="autoplay">
   </iframe>
 </div>
 
