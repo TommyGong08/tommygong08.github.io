@@ -2,7 +2,7 @@
 layout: defaults/page
 permalink: about.html
 narrow: true
-title: More info about Hailong Gong
+title:  Gong's Research
 images:
   - https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b1016b885e7438c4633109d77368d4d&auto=format&fit=crop&w=1651&q=80
   - https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=468a8c18f5d811cf03c654b653b5089e&auto=format&fit=crop&w=1650&q=80
@@ -17,6 +17,20 @@ images:
 ## Research Interests
 Computer architecture, photonic computing, heterogeneous computing, FPGA-based neural network acceleration, 
 photonic-electronic hybrid systems, high-performance systems for AI workloads.
+
+## Photonic Computing System Development
+
+Our team built a photonic computing prototype for high-speed and energy-efficient matrix computation.  
+As part of my master's thesis, I developed **LightMat: A Hybrid Photonic–Electronic System for General Matrix Multiplication**, including system integration and experimental validation.
+
+[//]: # ([**Video Demonstration**]&#40;https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/view&#41;)
+<div style="text-align:center;">
+  <iframe src="https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/preview"
+          width="800" height="450" allow="autoplay">
+  </iframe>
+</div>
+
+---
 
 
 ## Professional Service
