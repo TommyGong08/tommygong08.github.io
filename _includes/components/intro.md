@@ -3,13 +3,14 @@
 [//]: # ()
 [//]: # (It is maintained by Simon Freytag on [GitHub]&#40;https://github.com/sfreytag/friday-theme&#41; and it was built originally for [Simon's own portfolio]&#40;http://www.freytag.org.uk&#41;.)
 
-Hailong(Steven) Gong is now a postgraduate student at Australian National University, pursuing **Master of Computing (advanced)** since February 2024.
-Before that, he received the Bachelor's degree in Computer Science and Technology from Beijing Institute of Technology in 2022.
+Hailong (Steven) Gong is currently engaged in [research](https://tommygong08.github.io/about.html) in Photonic Computing, Computer Systems, and High-Performance 
+Computing, with a focus on system–architecture co-design for emerging computing platforms.
 
-Currently, Hailong is conducting [research](https://tommygong08.github.io/about.html) in Photonic Computing. 
-Meanwhile,he is also actively seeking **PhD opportunity** in Australia, and he is expected to graduate from ANU on November 2025.
+He was awarded the Master of Computing (Advanced) degree at Australian National University in 2025 and 
+the Bachelor's degree in Computer Science and Technology from Beijing Institute of Technology in 2022.
 
-Please click [here](https://tommygong08.github.io/2024/08/01/MyCoursePlan.html) to see his course plan .
+Hailong is open to **collaborative research, technical discussions, and knowledge-sharing opportunities** in 
+Photonic Computing, across both academia and industry.
 
 
 <br />
