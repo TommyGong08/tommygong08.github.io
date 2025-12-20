@@ -33,6 +33,7 @@ title: Welcome to Hailong's Personal Page
 <br />
 
 ### News
+- **\[Dec.2025\]** Happy to share that I have been awarded the **Master of Computing (Advanced)** degree with **Commendation** from ANU, with an overall GPA of 6.67 / 7.0!
 - **\[Nov.2025\]** Excited to share my master thesis work, **LightMat**, built on our team's photonic computing prototype ([video](https://drive.google.com/file/d/1GzqtUs4kAFqlLQIxayjiZsq-Vpm9nPbK/view))!
 - **\[July.2025\]** I completed the third semester with two High Distinctions, resulting in a GPA of **7.0/7.0** and overall GPA of **6.56/7.0**!
 - **\[April.2025\]**  I was invited to serve as a reviewer for *IEEE Transactions on Intelligent Transportation Systems (T-ITS)* and *IEEE Internet of Things Journal (IoT-J)*!
