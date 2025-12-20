@@ -15,15 +15,15 @@ title: Welcome to Hailong's Personal Page
 
 ## Education Background
 
-|         Year          |                                                                             Institute                                                                              | <img width=20/> Degree                              |
-|:---------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------|
-|      2024.2-now       |  <img src="https://raw.githubusercontent.com/TommyGong08/tommygong08.github.io/refs/heads/main/_pages/doc/ANU_Logo.png" width=30/> Australian National University  | <img width=20/>M.S. Computing (Advanced)            |
-|     2018.9-2022.6     | <img src="https://raw.githubusercontent.com/TommyGong08/tommygong08.github.io/refs/heads/main/_pages/doc/BIT_Logo.png" width=30/>  Beijing Institute of Technology | <img width=20/>B.S. Computer Science and Technology |
+|      Year      |                                                                             Institute                                                                              | <img width=20/> Degree                              |
+|:--------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------|
+| 2024.2-2025.12 |  <img src="https://raw.githubusercontent.com/TommyGong08/tommygong08.github.io/refs/heads/main/_pages/doc/ANU_Logo.png" width=30/> Australian National University  | <img width=20/>M.S. Computing (Advanced)            |
+| 2018.9-2022.6  | <img src="https://raw.githubusercontent.com/TommyGong08/tommygong08.github.io/refs/heads/main/_pages/doc/BIT_Logo.png" width=30/>  Beijing Institute of Technology | <img width=20/>B.S. Computer Science and Technology |
 
 <br />
 
 ## Experience
-- Research Student at ANU doing research on Photonic Computing (2024.12 - now)
+- Research Student at ANU doing research on Photonic Computing (2024.12 - 2025.12)
 - AOI Algorithmic Engineer at Shenzhen Yimeizhi Technology Co,.Ltd. (2023.3- 2023.12)
 - Research Assistant at BIT supervised by [Prof. Jianwei Gong](https://me-english.bit.edu.cn/people/facultydept/vehiclee2/xs3/b125047.htm) and [Prof. Chao Lu](https://scholar.google.com/citations?user=0Jv8_7MAAAAJ&hl=zh-CN) ( 2022.7- 2023.1)
 - Internship in ByteDance as Algorithm Engineer develop [Fastbot](https://github.com/bytedance/Fastbot_Android)( 2021.10-2022.3)
